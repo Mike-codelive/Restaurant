@@ -31,7 +31,8 @@
   </header> -->
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-light">
+
+    <nav class="navbar container-md navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,21 +40,34 @@
         </button>
         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
 
-          <ul class="navbar-nav">
-            <li class="nav-item me-3">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav text-center mb-3 mb-lg-0">
+            <li class="nav-item me-3 me-mb-0">
+              <a class="nav-link active" aria-current="page" href="#"><span> Home</span></a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item me-3 me-mb-0">
+              <a class="nav-link" href="#"> <span>Features</span></a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item me-3 me-mb-0">
+              <a class="nav-link" href="#"> <span>Pricing</span></a>
             </li>
           </ul>
-          <div class="d-flex container-fluid justify-content-end btn-navbar">
+
+          <div class="d-flex justify-content-center justify-content-lg-end flex-column flex-lg-row container-fluid">
+
+            <div class="d-flex justify-content-center justify-content-lg-end me-3 mb-5 mb-lg-0">
+              <div class="position-relative">
+          <input type="text" class="form-control shadow border border-light" id="searchImput" aria-describedby="search">
+          <i class="fa fa-search position-absolute top-50 end-0 me-3 translate-middle-y"></i>
+                
+              </div>
+        
+            </div>
+
+          <div class="d-flex justify-content-center justify-content-lg-end btn-navbar">
             <button href="#" type="button" class="btn flex-shrink-1  btn-group-sm btn-navbar__primary" role="group">Login</button>
           </div>
-
+            
+          </div>
 
         </div>
       </div>

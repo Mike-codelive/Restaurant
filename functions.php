@@ -82,3 +82,5 @@ function university_adjust_queries($query) {
 }
 
 add_action('pre_get_posts', 'university_adjust_queries');
+
+show_admin_bar( false );

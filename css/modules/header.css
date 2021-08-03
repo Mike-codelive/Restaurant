@@ -1,7 +1,14 @@
-.navbar {
+header {
 
+.navbar {
 	padding: 20px 0;
 	background-color: $primary-color;
+
+}
+
+.form-control {
+	max-width: 300px;
+}
 
 	.navbar-brand {
 		margin-right: 5rem;
@@ -22,7 +29,6 @@
 		&:hover {
 			background-color: $secondary-color;
 			color: $primary-color;
-
 		}
 		&:focus {
 			box-shadow: unset;
@@ -30,36 +36,24 @@
 	}
 
 	.navbar-nav {
-		li {
+		span {
 			position: relative;
 		}
-		li:after {
+		span:after {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			bottom: 0;
+			bottom: -8px;
 			left: 0;
 			background-color: $secondary-color;
 			transition: transform 0.3s ease-in-out;
 			transform: scaleX(0);
 		}
-		li:hover:after {
+		li:hover span:after {
 			transform: scaleX(1);
 		}
 	}
 
-	@media screen and (max-width: 768px) {
 
-		.btn-navbar {
-			justify-content: center !important;
-		}
-
-		.navbar-nav {
-			align-items: center;
-			margin: 25px 0;
-
-		}
-
-	}
 }
