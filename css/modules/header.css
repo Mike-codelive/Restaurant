@@ -1,14 +1,15 @@
 header {
 
-.navbar {
-	padding: 20px 0;
-	background-color: $primary-color;
 
-}
+	.navbar {
+		padding: 20px 0;
+		background-color: $primary-color;
 
-.form-control {
-	max-width: 300px;
-}
+	}
+	
+	.form-control {
+		max-width: 300px;
+	}
 
 	.navbar-brand {
 		margin-right: 5rem;
@@ -54,6 +55,5 @@ header {
 			transform: scaleX(1);
 		}
 	}
-
 
 }

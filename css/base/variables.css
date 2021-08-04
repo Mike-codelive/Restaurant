@@ -1,13 +1,15 @@
 
-$primary-color: hsl(0deg 0% 100%);
-$secondary-color: hsl(0deg 0% 0%);
-
-
-
-
-
 $beige: #FAF0CA;
+$green: hsl(166deg 85% 40%);
 $mainYellow: #F4D35E;
 $mainBlue: #0D3B66;
 $lightOrange: #EE964B;
 $darkOrange: #F95738;
+
+
+
+
+
+$primary-color: hsl(0deg 0% 100%);
+$secondary-color: hsl(0deg 0% 0%);
+$tertiary-color: $green;

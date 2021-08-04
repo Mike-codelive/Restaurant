@@ -51,21 +51,23 @@
               <a class="nav-link" href="#"> <span>Pricing</span></a>
             </li>
           </ul>
+          
 
           <div class="d-flex justify-content-center justify-content-lg-end flex-column flex-lg-row container-fluid">
 
             <div class="d-flex justify-content-center justify-content-lg-end me-3 mb-5 mb-lg-0">
               <div class="position-relative">
-          <input type="text" class="form-control shadow border border-light" id="searchImput" aria-describedby="search">
-          <i class="fa fa-search position-absolute top-50 end-0 me-3 translate-middle-y"></i>
+                <input type="text" class="form-control shadow border border-light" id="searchImput" aria-describedby="search">
+                <i class="fa fa-search position-absolute top-50 end-0 me-3 translate-middle-y"></i>
                 
               </div>
-        
-            </div>
 
-          <div class="d-flex justify-content-center justify-content-lg-end btn-navbar">
-            <button href="#" type="button" class="btn flex-shrink-1  btn-group-sm btn-navbar__primary" role="group">Login</button>
-          </div>
+            </div>
+            
+
+            <div class="d-flex justify-content-center justify-content-lg-end btn-navbar">
+              <button href="#" type="button" class="btn flex-shrink-1  btn-group-sm btn-navbar__primary" role="group">Login</button>
+            </div>
             
           </div>
 

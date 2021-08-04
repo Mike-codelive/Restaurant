@@ -1,5 +1,8 @@
 import "../css/style.css"
 import Collapse from 'bootstrap/js/dist/collapse';
+import Dropdown from 'bootstrap/js/dist/dropdown';
+
+
 
 // Our modules / classes
 import MobileMenu from "./modules/MobileMenu"
