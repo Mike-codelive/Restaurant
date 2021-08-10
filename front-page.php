@@ -1,47 +1,60 @@
 <?php get_header(); ?>
 
-<section class='page-banner position-relative'>
+<section class='page-banner position-relative d-flex d-block justify-content-center align-items-center'>
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);">
   </div>
 
-  <div class="page-banner__select-bar position-absolute bottom-0 start-0 d-flex p-3">
-    <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown link
-      </a>
+  <div class="page-banner__select-bar bottom-0 start-0 d-flex flex-column flex-lg-row">
 
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+    <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+      <div class="dropdown">
+        <a class="btn btn-secondary shadow-none border-0 text-start bg-transparent mb-lg-0 p-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="text-secondary">TYPE</span> <br>
+          <span class="text-dark me-md-5">Personal</span> <span class="material-icons-outlined shadow text-dark p-1" id="selectBarArrow">
+            arrow_forward_ios
+          </span>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a class="btn btn-secondary shadow-none border-0 text-start bg-transparent mb-lg-0 p-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="text-secondary">TYPE</span> <br>
+          <span class="text-dark me-md-5">Personal</span> <span class="material-icons-outlined shadow text-dark p-1">
+            arrow_forward_ios
+          </span>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <a class="btn btn-secondary shadow-none border-0 text-start bg-transparent mb-lg-0 p-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="text-secondary">TYPE</span> <br>
+          <span class="text-dark me-md-5">Personal</span> <span class="material-icons-outlined shadow text-dark p-1">
+            arrow_forward_ios
+          </span>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown link
-      </a>
-
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-
-    <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown link
-      </a>
-
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-
-    <button type="button" class="btn page-banner__select-bar-btn">BOOK <br> NOW</button>
+    <button type="button" class="btn page-banner__select-bar-btn shadow-none border-0">BOOK <br> NOW</button>
 
   </div>
 </section>

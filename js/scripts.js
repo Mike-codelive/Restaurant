@@ -1,17 +1,18 @@
 import "../css/style.css"
-import Collapse from 'bootstrap/js/dist/collapse';
-import Dropdown from 'bootstrap/js/dist/dropdown';
+import Collapse from 'bootstrap/js/dist/collapse'
+import Dropdown from 'bootstrap/js/dist/dropdown'
 
 
+import Animations from './modules/Animations'
 
-// Our modules / classes
-import MobileMenu from "./modules/MobileMenu"
-import HeroSlider from "./modules/HeroSlider"
+// // Our modules / classes
+// import MobileMenu from "./modules/MobileMenu"
+// import HeroSlider from "./modules/HeroSlider"
 
 
-// Instantiate a new object using our modules/classes
-var mobileMenu = new MobileMenu()
-var heroSlider = new HeroSlider()
+// // Instantiate a new object using our modules/classes
+// var mobileMenu = new MobileMenu()
+// var heroSlider = new HeroSlider()
 
 // Allow new JS and CSS to load in browser without a traditional page refresh
 if (module.hot) {

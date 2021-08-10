@@ -1,6 +1,5 @@
 header {
 
-
 	.navbar {
 		padding: 20px 0;
 		background-color: $primary-color;
@@ -43,7 +42,7 @@ header {
 		span:after {
 			content: "";
 			position: absolute;
-			width: 100%;
+			width: 50%;
 			height: 2px;
 			bottom: -8px;
 			left: 0;

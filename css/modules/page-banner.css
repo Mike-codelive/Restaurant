@@ -7,6 +7,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
+    display: block;
   }
 
   &__select-bar {
@@ -15,5 +16,23 @@
     &-btn {
       background-color: $tertiary-color;
     }
+    .material-icons-outlined {
+      border-radius: 50%;
+    }
   }
+
+}
+
+
+@media (max-width: 992px) {
+  .page-banner__bg-image {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-banner__select-bar {
+    position: absolute;
+  }
+  
 }
