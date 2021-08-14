@@ -5,10 +5,10 @@ pageBanner(array(
   'title' => 'Past Events',
   'subtitle' => 'A recap of our past events.'
 ));
- ?>
+?>
 
 <div class="container container--narrow page-section">
-<?php
+  <?php
   
   $today = date('Ymd');
   $pastEvents = new WP_Query(array(
@@ -34,7 +34,7 @@ pageBanner(array(
   echo paginate_links(array(
     'total' => $pastEvents->max_num_pages
   ));
-?>
+  ?>
 </div>
 
 <?php get_footer();

@@ -1,11 +1,12 @@
 let selectBarArrow = document.querySelector('#selectBarArrow')
 let selectBarBtn = document.querySelector('#dropdownMenuLink')
+let body = document.querySelector('body')
 
-const removeClickListener = () => {
-    document.removeEventListener('click', rotateArrow)
-}
+// const removeClickListener = () => {
+//     document.removeEventListener('click', rotateArrow)
+// }
 
-let rotateArrow = (state) => {
+function rotateArrow(state) {
     console.log('click event')
 
     let animation = {}
@@ -25,10 +26,15 @@ let rotateArrow = (state) => {
         animation
         )
 
-    removeClickListener()
+    // removeClickListener()
 }
 
+TweenMax.from( selectBarArrow, 0.5,
+    {css:{rotation: 90},
+    ease:Quad.easeInOut}
+    )
+
 selectBarBtn.addEventListener('click', rotateArrow(true))
-document.addEventListener('click', rotateArrow(false))
+// body.addEventListener('click', rotateArrow(false))
 
 // !selectBarBtn.classList.contains('show') ? null : null;

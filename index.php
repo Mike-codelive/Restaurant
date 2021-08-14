@@ -5,9 +5,9 @@ pageBanner(array(
   'title' => 'Welcome to our blog!',
   'subtitle' => 'Keep up with our latest news.'
 ));
- ?>
+?>
 <div class="container container--narrow page-section">
-<?php
+  <?php
   while(have_posts()) {
     the_post(); ?>
     <div class="post-item">
@@ -25,7 +25,7 @@ pageBanner(array(
     </div>
   <?php }
   echo paginate_links();
-?>
+  ?>
 </div>
 
 <?php get_footer();

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class='page-banner position-relative d-flex d-block justify-content-center align-items-center'>
+<section class='page-banner position-relative d-flex d-block justify-content-center align-items-center container-lg'>
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);">
   </div>
 
@@ -54,11 +54,14 @@
 
     </div>
 
-    <button type="button" class="btn page-banner__select-bar-btn shadow-none border-0">BOOK <br> NOW</button>
+    <button type="button" class="btn page-banner__select-bar-btn shadow-none border-0 px-md-4">BOOK <br> NOW</button>
 
   </div>
 </section>
 
+<?php 
+get_template_part('Components/cards-coworking', 'cards coworking');
+?>
 
 <!-- <div class="page-banner">
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);"></div>

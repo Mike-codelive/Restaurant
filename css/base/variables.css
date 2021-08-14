@@ -5,6 +5,9 @@ $mainYellow: #F4D35E;
 $mainBlue: #0D3B66;
 $lightOrange: #EE964B;
 $darkOrange: #F95738;
+$mainGrey: hsl(0deg 0% 94%);
+$darkGrey: hsl(0deg 0% 49%);
+$shadowT: hsl(0deg 0% 0% / 0.3);
 
 
 
@@ -13,3 +16,6 @@ $darkOrange: #F95738;
 $primary-color: hsl(0deg 0% 100%);
 $secondary-color: hsl(0deg 0% 0%);
 $tertiary-color: $green;
+$quaternary-color: $darkGrey;
+$quinary-color: $mainGrey;
+$senary-color: $shadowT;
