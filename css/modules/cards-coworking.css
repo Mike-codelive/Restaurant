@@ -4,11 +4,22 @@
 	margin-top: 8rem;
 	margin-bottom: 8rem;
 
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
 	&__cards {
 
 		&-img {
 
+			transition-property: box-shadow;
+			transition-delay: 1s;
+			transition: ease-in-out 1s;
 			overflow: hidden;
+			flex: 0 0 calc(100% - 20px);
+			margin: 0 10px 2rem 0;
 
 			&:hover .info {
 				opacity: 1;
@@ -24,37 +35,50 @@
 				margin-top: 0px;
 				opacity: 1;
 			}
+			&:hover {
+				box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175)
+			}
+		}
+
+		&-frontside {
+			
+			img {
+				height: 400px;
+				background-size: cover;
+			}
 		}
 
 		&-backside {
+
 			transition-property: margin, opacity;
-			transition: ease-in-out 1s;
+			transition: ease-in-out 0.7s;
 			width: 100%;
 			height: 100%;
 			background-color: $tertiary-color;
 			margin-left: -100%;
-			margin-top: -358px;
+			margin-top: -200%;
 			opacity: 0;
+
 			.info {
-				transition: ease 1.5s;
+				transition: ease 1s;
 				transition-property: opacity;
-				transition-delay: 1s;
+				transition-delay: .7s;
 				opacity: 0;
-				margin-top: 140.5px !important;
+				margin-top: 180px !important;
 				transform: translateY(-50%);
 			}
 			h1 {
-				transition: ease 1.5s;
+				transition: ease 1s;
 				transition-property: margin;
-				transition-delay: 1s;
+				transition-delay: .7s;
 				font-size: 3.5rem;
 				margin-top: -100%;
 				margin-left: 10px;
 			}
 			button {
-				transition: ease 1.5s;
+				transition: ease 1s;
 				transition-property: margin;
-				transition-delay: 1s;
+				transition-delay: .7s;
 				background-color: $senary-color;
 				margin-right: -100%;
 				bottom: 40px;
@@ -93,32 +117,9 @@
 	}
 }
 
-@keyframes cardEnter {
-	0% {
-		margin-left: -100%;
-		margin-top: -358px;
-		opacity: 0;
+@media (min-width: 1000px) {
+	.cards-coworking__cards-img {
+		flex: 0 0 calc(33.333% - 20px);
+		margin-bottom: 2rem;
 	}
-	100% {
-		margin-left: 0%;
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
-
-@keyframes card {
-	100%	{.cards-coworking__cards-backside {
-
-		.info {
-			opacity: 1;
-		}
-		h1 {
-			margin-top: 0;
-		}
-		buttom {
-			margin-right: 0;
-		}
-
-	}
-}
 }
