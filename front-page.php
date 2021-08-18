@@ -61,6 +61,7 @@
 
 <?php 
 get_template_part('Components/cards-coworking', 'cards coworking');
+get_template_part('Components/solutions', 'solutions');
 ?>
 
 <!-- <div class="page-banner">

@@ -1,0 +1,22 @@
+.solutions {
+
+	button {
+		color: $tertiary-color;
+		height: fit-content;
+		align-self: flex-end;
+	}
+	&__title {
+	}
+
+	&__collapse {
+		[aria-expanded="true"] {
+			color: $secondary-color !important;
+		}
+		p {
+			flex: 25%;
+		}
+		&-card {
+			flex: 75%;
+		}
+	}
+}
