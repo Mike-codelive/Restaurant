@@ -1,8 +1,10 @@
 import "../css/style.css"
+
 import Collapse from 'bootstrap/js/dist/collapse'
 import Dropdown from 'bootstrap/js/dist/dropdown'
 
 
+import './modules/Bootstrap'
 import './modules/Animations'
 
 

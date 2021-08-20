@@ -5,18 +5,40 @@
 		height: fit-content;
 		align-self: flex-end;
 	}
-	&__title {
-	}
 
 	&__collapse {
-		[aria-expanded="true"] {
-			color: $secondary-color !important;
+
+		height: 550px;
+
+		&-buttons {
+			width: 30%;
+
+			a[aria-expanded="true"] {
+				color: $secondary-color !important;
+				span {
+					transition: transform ease-in-out .5s;
+					transform: rotate(-90deg);
+				}
+				.solutions__collapse-card.collapse.show {
+					display: block !important;
+				}
+			}
+
+			a {
+				span {
+					transition: transform ease-in-out .5s;
+					transform: rotate(0);
+				}
+			}
 		}
-		p {
-			flex: 25%;
-		}
+
 		&-card {
-			flex: 75%;
+			width: 70%;
+
+			.openCard {
+				display: block !important;
+				height: 100% !important;
+			}
 		}
 	}
 }
