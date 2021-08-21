@@ -26,6 +26,5 @@ btnCollapse.forEach((btnC) => {
 			})
 			btn.target.setAttribute('aria-expanded', 'true')
 		}
-
 	})
 })

@@ -1,0 +1,57 @@
+.experience {
+
+	background: linear-gradient(to bottom, $primary-color 20%, $secondary-color 0%);
+
+	img {
+		height: 500px;
+		background-size: cover;
+	}
+
+	a {
+		background-color: $tertiary-color;
+		font-size: 2rem;
+		box-shadow: 0 1.2rem 1rem hsl(166deg 85% 20%) !important;
+		bottom: 60px !important;
+		right: -40px;
+		transition-property: transform, box-shadow;
+		transition: ease-in-out .3s;
+		position: initial;
+		margin-top: 1.5rem;
+
+		& span {
+			opacity: .8;
+		}
+
+		&:hover {
+			transform: translate(3px, 7px);
+			box-shadow: 0 .7rem 1rem hsl(166deg 85% 20%) !important;
+		}
+
+	}
+
+	.container-lg > div:last-child > div:first-child {
+		margin-right: 15rem;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.container-lg > div:last-child {
+		flex-wrap: wrap;
+	}
+	.experience .container-lg > div:last-child > div:first-child {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 1020px) {
+
+	.experience > .container-lg > div > a {
+		position: absolute;
+		margin-top: 0;
+	}
+
+	.experience > .container-lg > .position-relative {
+		display: block !important;
+	}
+}

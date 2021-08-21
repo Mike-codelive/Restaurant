@@ -69,9 +69,10 @@ justify-content-lg-start align-items-center container-fluid'>
 </div>
 </section> -->
 
-<?php 
+<?php
 // get_template_part('Components/cards-coworking', 'cards coworking');
 get_template_part('Components/solutions', 'solutions');
+get_template_part('Components/experience', 'experience');
 ?>
 
 <!-- <div class="page-banner">

@@ -5,7 +5,7 @@ import Dropdown from 'bootstrap/js/dist/dropdown'
 
 
 import './modules/Bootstrap'
-import './modules/Animations'
+// import './modules/Animations'
 
 
 // // Our modules / classes
