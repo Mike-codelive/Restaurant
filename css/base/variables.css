@@ -19,3 +19,8 @@ $tertiary-color: $green;
 $quaternary-color: $darkGrey;
 $quinary-color: $mainGrey;
 $senary-color: $shadowT;
+
+
+
+
+$x-position: calc(50% - 125px)

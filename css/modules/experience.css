@@ -4,7 +4,7 @@
 
 	img {
 		height: 500px;
-		background-size: cover;
+		object-fit: cover;
 	}
 
 	a {

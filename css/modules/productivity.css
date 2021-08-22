@@ -1,0 +1,92 @@
+.prod {
+
+	margin: 13rem 0 5rem 0;
+
+	&__first {
+
+		.prod__icon {
+			align-items: center;
+			margin-bottom: 3.5rem;
+			font-size: 3rem;
+			span {
+				font-size: 7rem;
+				margin-right: 1.5rem;
+				color: $quaternary-color;
+			}
+			h1,p {
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+
+	}
+
+	&__second {
+
+		flex: 0 0 50%;
+		height: 450px;
+		img {
+			width: calc(100% - 125px);
+			height: 100%;
+			object-fit: cover;
+		}
+		div {
+			width: 250px;
+			background-color: $tertiary-color;
+		}
+	}
+
+	@media (min-width: 992px) {
+
+		.prod__icon-lg {
+
+			flex: 0 0 calc(50% - 60px);
+			position: relative;
+/*			box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+*/
+& > div {
+	transition-property: transform;
+	transition: ease-in-out .2s;
+	z-index: 99;
+}
+span {
+	align-self: flex-start;
+	font-size: 3rem;
+}
+p {
+	font-size: 16px;
+}
+& > div:hover {
+	transform: translate(0, 5px);
+}
+}
+
+&__first {
+	padding-right: 4rem;
+}
+&__second > div {
+	position: absolute;
+	transform: translate($x-position, -50%);
+}
+}
+
+@media (max-width: 1500px) {
+	.prod__icon-lg {
+		flex: 0 0 calc(50% - 15px);
+	}
+}
+
+@media (max-width: 992px) {
+
+	.prod__icon {
+		div {
+			align-items: center;
+		}
+	}
+
+	margin-top: 5rem;
+}
+}
+

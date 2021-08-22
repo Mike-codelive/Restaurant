@@ -70,9 +70,11 @@ justify-content-lg-start align-items-center container-fluid'>
 </section> -->
 
 <?php
+
 // get_template_part('Components/cards-coworking', 'cards coworking');
-get_template_part('Components/solutions', 'solutions');
-get_template_part('Components/experience', 'experience');
+// get_template_part('Components/solutions', 'solutions');
+// get_template_part('Components/experience', 'experience');
+get_template_part('Components/productivity', 'productivity');
 ?>
 
 <!-- <div class="page-banner">

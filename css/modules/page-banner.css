@@ -6,11 +6,12 @@
   &__bg-image {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    object-fit: cover;
+    background-size: cover;  
     display: block;
-  }
+}
 
-  &__select-bar {
+&__select-bar {
 
     background-color: $primary-color;
     left: 11px;
@@ -20,44 +21,44 @@
       .rotate-select-arrow {
         transition: transform ease-in-out .5s;
         transform: rotate(90deg);
-      }
     }
+}
 
-    a {
-      .rotate-select-arrow {
-        transition: transform ease-in-out .5s;
-        transform: rotate(-90deg);
-      }
-    }
+a {
+  .rotate-select-arrow {
+    transition: transform ease-in-out .5s;
+    transform: rotate(-90deg);
+}
+}
 
-    .dropdown-item {
-      color: $primary-color;
-    }
+.dropdown-item {
+  color: $primary-color;
+}
 
-    &-btn {
-      background-color: $tertiary-color;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-    }
+&-btn {
+  background-color: $tertiary-color;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
 
-  }
+}
 
 }
 
 @media (max-width: 992px) {
   .page-banner__bg-image {
     display: none;
-  }
+}
 }
 
 @media (min-width: 992px) {
   .page-banner__select-bar {
     position: absolute;
-  }
+}
 }
 
 @media (min-height: 1200px) {
   .page-banner {
     height: 1200px;
-  }
+}
 }
