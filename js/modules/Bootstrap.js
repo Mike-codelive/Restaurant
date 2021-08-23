@@ -29,6 +29,7 @@ getIcoMaxWidth = () => {
 	return icoMaxWidth
 }
 
+
 prodIco.forEach((ico) => {
 	ico.style.width = `${getIcoMaxWidth()}px`;
 })

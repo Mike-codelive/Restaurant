@@ -1,4 +1,5 @@
 <section class="prod">
+	
 	<div class="container-lg d-flex flex-column flex-lg-row">
 		<div class="prod__first text-dark mb-5 mb-lg-0">
 			<div class="mb-5">
@@ -30,41 +31,41 @@
 					</div>
 				</div>
 			</div>
-				<div class="prod__icon prod__icon-lg">				<div class="d-flex bg-white">
-					<span class="material-icons-outlined">
-						menu_book
-					</span>
-					<div>
-						<h1>380</h1>
-						<p>Event Space</p>
-					</div>
+			<div class="prod__icon prod__icon-lg">				<div class="d-flex bg-white">
+				<span class="material-icons-outlined">
+					menu_book
+				</span>
+				<div>
+					<h1>380</h1>
+					<p>Event Space</p>
 				</div>
 			</div>
-			<div class="prod__icon prod__icon-lg">
-				<div class="d-flex bg-white">
-					<span class="material-icons-outlined">
-						dinner_dining
-					</span>
-					<div>
-						<h1>36</h1>
-						<p>Countries</p>
-					</div>
+		</div>
+		<div class="prod__icon prod__icon-lg">
+			<div class="d-flex bg-white">
+				<span class="material-icons-outlined">
+					dinner_dining
+				</span>
+				<div>
+					<h1>36</h1>
+					<p>Countries</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="prod__second d-flex d-lg-block justify-content-center align-items-center position-relative">
-		<img class="d-none d-lg-block" src="<?php echo get_theme_file_uri('/images/barksalot.jpg') ?>" alt="productivity">
-		<div class="top-0 end-0 text-light py-3 px-4">
-			<span class="material-icons-outlined fs-3">
-				apartment
-			</span>
-			<?php echo '<h3 class="mb-2"><span class="site-title">';
-			echo get_bloginfo( "name" );
-			echo '</span> Agency</h3>'; ?>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos odio nihil eaque repellendus.</p>
-		</div>
+</div>
+<div class="prod__second d-flex d-lg-block justify-content-center align-items-center position-relative">
+	<img class="d-none d-lg-block" src="<?php echo get_theme_file_uri('/images/barksalot.jpg') ?>" alt="productivity">
+	<div class="top-0 end-0 text-light py-3 px-4">
+		<span class="material-icons-outlined fs-3">
+			apartment
+		</span>
+		<?php echo '<h3 class="mb-2"><span class="site-title">';
+		echo get_bloginfo( "name" );
+		echo '</span> Agency</h3>'; ?>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos odio nihil eaque repellendus.</p>
 	</div>
+</div>
 </div>
 
 </section>

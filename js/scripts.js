@@ -1,10 +1,13 @@
 import "../css/style.css"
+import "swiper/swiper.min.css"
 
 import Collapse from 'bootstrap/js/dist/collapse'
 import Dropdown from 'bootstrap/js/dist/dropdown'
+import Swiper from 'swiper'
 
 
 import './modules/Bootstrap'
+import './modules/Swiper'
 // import './modules/Animations'
 
 

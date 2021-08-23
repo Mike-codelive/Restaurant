@@ -1,7 +1,7 @@
 <?php
 
 function pageBanner($args = NULL) {
-  
+
   if (!$args['title']) {
     $args['title'] = get_the_title();
   }
@@ -35,7 +35,7 @@ function university_files() {
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   wp_enqueue_style('Material-Icons', '//fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
   
-  wp_enqueue_script('gSap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', NULL, '1.0', true);
+  wp_enqueue_script('gSap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', NULL, '1.0', true); 
 
   if (strstr($_SERVER['SERVER_NAME'], 'restaurant.local')) {
     wp_enqueue_script('main-university-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
