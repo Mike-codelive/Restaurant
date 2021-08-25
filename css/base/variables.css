@@ -1,4 +1,6 @@
 
+$white: hsl(0deg 0% 100%);
+$dark: hsl(0deg 0% 0%);
 $beige: #FAF0CA;
 $green: hsl(166deg 85% 40%);
 $mainYellow: #F4D35E;
@@ -8,13 +10,14 @@ $darkOrange: #F95738;
 $mainGrey: hsl(0deg 0% 94%);
 $darkGrey: hsl(0deg 0% 49%);
 $shadowT: hsl(0deg 0% 0% / 0.3);
+$yellowIcons: hsl(24deg 100% 48%);
 
 
 
 
 
-$primary-color: hsl(0deg 0% 100%);
-$secondary-color: hsl(0deg 0% 0%);
+$primary-color: $white;
+$secondary-color: $dark;
 $tertiary-color: $green;
 $quaternary-color: $darkGrey;
 $quinary-color: $mainGrey;

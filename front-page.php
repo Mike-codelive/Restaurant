@@ -70,14 +70,20 @@ justify-content-lg-start align-items-center container-fluid'>
 </section> -->
 
 
+
+
 <?php
 
 // get_template_part('Components/cards-coworking', 'cards coworking');
 // get_template_part('Components/solutions', 'solutions');
 // get_template_part('Components/experience', 'experience');
-get_template_part('Components/productivity', 'productivity');
-get_template_part('Components/carousel', 'carousel');
+// get_template_part('Components/productivity', 'productivity');
+// get_template_part('Components/carousel', 'carousel');
+get_template_part('Components/reviews', 'reviews');
 ?>
+
+
+
 
 <!-- <div class="page-banner">
   <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>);"></div>

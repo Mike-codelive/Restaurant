@@ -2,6 +2,18 @@
   text-transform: capitalize;
 }
 
+.btn-green {
+  background-color: $tertiary-color;
+  color: $secondary-color;
+}
+
+.ico-stars {
+  color: $yellowIcons;
+}
+
+
+
+
 
 
 

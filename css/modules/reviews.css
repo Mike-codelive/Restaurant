@@ -1,0 +1,157 @@
+.reviews {
+
+	&__title {
+		width: 100%;
+	}
+
+	#reviews__swipe {
+
+		flex: 0 0 50%;
+		z-index: 99;
+		width: 100%;
+		height: 100%;
+		.reviews__item {
+			transition: all ease-in-out 1s;
+			position: relative;
+			height: 100%;
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.swiper-slide {
+			width: 55%;
+			height: 500px;
+		}
+
+		.swiper-slide-next .reviews__item {
+			display: flex;
+			align-items: center;
+			opacity: .5;
+			img {
+				height: 75%;
+			}
+		}
+	}
+
+	.swipe-arrows {
+
+		width: calc(48px + 30px);
+		color: $secondary-color;
+		position: relative;
+		height: 24px;
+
+		div {
+			position: absolute;
+			cursor: pointer;
+			color: $quaternary-color;
+		}
+		div:first-child {
+			right: 50px;
+		}
+		div:last-child {
+			left: 50px;
+		}
+		span {
+			font-size: 3rem;
+			position: relative;
+			transition: padding ease-in-out .5s;
+			display: flex;
+			align-items: center;
+			&:after {
+				position: absolute;
+				transition: transform ease-in-out .5s;
+				transform: scaleX(0);
+				content: '';
+				height: 4px;
+				width: 35px;
+				background-color: $secondary-color;
+			}
+			&:hover {
+				color: $secondary-color;
+				&:after {
+					transform: scaleX(1.0);
+				}
+			}
+		}
+
+		div:first-child > span {
+			&:after {
+				transform-origin: right;
+				right: 4px;
+			}
+			&:hover {
+				padding-right: 15px;
+			}
+		}
+		div:last-child > span {
+
+			&:after {
+				transform-origin: left;
+				left: 4px;
+			}
+			&:hover {
+				color: $secondary-color;
+				padding-left: 15px;
+			}
+		}
+	}
+
+	.reviews__slide {
+
+		z-index: 9999999;
+
+		&-social {
+			color: $tertiary-color;
+			position: absolute;
+			right: 20%;
+			top: -12%;
+			font-size: 4rem;
+		}
+		&-card {
+			position: absolute;
+			top: 25%;
+			left: -380px;
+			transition: transform ease .5s;
+			overflow: hidden;
+			padding: 2rem 1rem 1rem 1rem;
+
+			& > div {
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+				transform: translateX(420px);
+				transition: transform cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s;
+				position: relative;
+				background-color: $primary-color;
+				padding: 2rem 2rem 2rem 3.5rem;
+				width: 400px;
+				height: 100%;
+			}
+
+			&-show {
+				transform: translateX(0) !important;
+			}
+		}
+		&-text {
+			font-size: 16px;
+			h3 {
+				font-size: 20px;
+				font-weight: bolder;
+			}
+			p:last-child {
+				font-size: 15px;
+				color: $quinary-color;
+			}
+		}
+	}
+
+
+	@media (min-width: 992px) {
+
+		&__title {
+			width: 50%;
+		}
+	}
+}
+
