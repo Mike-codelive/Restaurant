@@ -1,40 +1,17 @@
-header {
+.navbar {
 
-	.navbar {
-		padding: 20px 0;
-		background-color: $primary-color;
-	}
-	
-	.form-control {
-		max-width: 300px;
-	}
+	padding: 20px 0;
+	background-color: $primary-color;
 
-	.navbar-brand {
+	&__brand {
 		margin-right: 5rem;
 	}
 
-	.navbar-toggler:focus {
-		box-shadow: unset;
-	}
+	&__links {
 
-	.btn-navbar__primary {
-		background-color: $primary-color;
-		padding: 5px 30px;
-		color: $secondary-color;
-		transition: .4s ease-in-out ;
-		transition-property: background, color ;
-		border: 1px solid $secondary-color;
-
-		&:hover {
-			background-color: $secondary-color;
-			color: $primary-color;
+		ul {
+			padding-left: 0;
 		}
-		&:focus {
-			box-shadow: unset;
-		}
-	}
-
-	.navbar-nav {
 		span {
 			position: relative;
 		}
@@ -45,12 +22,33 @@ header {
 			height: 2px;
 			bottom: -8px;
 			left: 0;
-			background-color: $secondary-color;
+			background-color: $tertiary-color;
 			transition: transform 0.3s ease-in-out;
 			transform: scaleX(0);
+			transform-origin: left;
 		}
 		li:hover span:after {
 			transform: scaleX(1);
+		}
+		li {
+			list-style: none;
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		transition: color ease-in-out .3s;
+		color: $secondary-color;
+		&:hover {
+			color: $tertiary-color;
+		}
+	}
+	
+	@media (min-width: 992px) {
+		&__links {
+			li {
+				margin-right: 2rem;
+			}
 		}
 	}
 

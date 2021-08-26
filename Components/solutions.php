@@ -1,4 +1,4 @@
-<section class="solutions container-lg px-5">
+<section class="solutions container-lg px-5 mb-5">
 	<div class="solutions__title d-flex flex-column flex-lg-row justify-content-between mb-5">
 		<div class="d-flex justify-content-between flex-column mb-5 mb-lg-0">
 			<h6 class="text-secondary mb-3">SOLUTIONS</h6>
@@ -37,9 +37,9 @@
 			<div class="col position-relative">
 				<div class="collapse show multi-collapse" id="multiCollapseExample1" data-bs-parent="#cards">
 					<div class="card card-body border-0">
-						<iframe class="mb-3" width="100%" height="500" src="https://www.youtube.com/embed/k8xRBTvbA0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+						<iframe class="mb-5" width="100%" height="500" src="https://www.youtube.com/embed/k8xRBTvbA0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 						</iframe>
-						<p class="text-secondary mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia temporibus dignissimos sapiente vero ut blanditiis vel eligendi quasi rem nemo molestiae maxime sint quas, iusto.</p>
+						<p class="text-secondary mb-5">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia temporibus dignissimos sapiente vero ut blanditiis vel eligendi quasi rem nemo molestiae maxime sint quas, iusto.</p>
 						<button type="button" class="btn shadow-none border-0 bg-transparent flex-grow-0 py-0 d-flex align-items-center align-self-center text-center">View All Solutions <span class="material-icons-outlined mx-3">
 							chevron_right
 						</span></button>

@@ -1,55 +1,52 @@
-<!-- <footer class="site-footer">
+<footer>
+  <div class="container-lg mt-5">
+    <div class="footer">
 
-    <div class="site-footer__inner container container--narrow">
-
-      <div class="group">
-
-        <div class="site-footer__col-one">
-          <h1 class="school-logo-text school-logo-text--alt-color"><a href="<?php echo site_url() ?>"><strong>Fictional</strong> University</a></h1>
-          <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+      <div class="footer__block">
+        <h1><span class="site-title fw-bolder"><?php echo get_bloginfo( 'name' ); ?>.</span>
+        </h1>
+        <p class="footer__text">Counter delivery, carters Beach PostCentre, Wesport</p>
+        <p class="text-secondary">@ofspace Digital Agency</p>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__links-text">Support</h2>
+        <a href="#">E-books</a>
+        <a href="#">Presentation</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Managment</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__links-text">Team</h2>
+        <a href="#">E-books</a>
+        <a href="#">Presentation</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Managment</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__links-text">Product</h2>
+        <a href="#">E-books</a>
+        <a href="#">Presentation</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Managment</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__block">
+        <div class="mb-3">
+          <h2 class="footer__links-text">Address</h2>
+          <p>Counter Delivery, Carters Beach PostCentre, Westport</p>
         </div>
-
-        <div class="site-footer__col-two-three-group">
-          <div class="site-footer__col-two">
-            <h3 class="headline headline--small">Explore</h3>
-            <nav class="nav-list">
-              <ul>
-                <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Campuses</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="site-footer__col-three">
-            <h3 class="headline headline--small">Learn</h3>
-            <nav class="nav-list">
-              <ul>
-                <li><a href="#">Legal</a></li>
-                <li><a href="<?php echo site_url('/privacy-policy') ?>">Privacy</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div class="site-footer__col-four">
-          <h3 class="headline headline--small">Connect With Us</h3>
-          <nav>
-            <ul class="min-list social-icons-list group">
-              <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </nav>
+        <div class="footer__ico">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
         </div>
       </div>
 
     </div>
-  </footer> -->
+  </div>
+</footer>
 
 <?php wp_footer(); ?>
 </body>

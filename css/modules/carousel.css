@@ -1,5 +1,7 @@
 .car {
 
+	margin: 15rem 0;
+
 	&__item {
 
 		display: flex;
@@ -8,5 +10,10 @@
 			height: 200px;
 			width: 300px;
 		}
+	}
+
+	#car__swipe {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
 	}
 }

@@ -47,7 +47,36 @@
     use: ["css-loader?url=false", { loader: "postcss-loader", options: { plugins: postCSSPlugins } }]
   }
 
+  let bootstrapIcoImport = {
+    test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
+    use: {
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+        outputPath: 'webfonts',
+        publicPath: '../webfonts',
+      },
+    }
+  }
+
   let config = {
+    module: {
+      rules: [
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        include: path.resolve(__dirname, './node_modules/bootstrap-icons/font/fonts'),
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'webfonts',
+            publicPath: '../webfonts',
+          },
+        }
+      }
+      ]
+    },
     entry: {
       scripts: "./js/scripts.js"
     },
@@ -112,6 +141,7 @@
 if (currentTask == "build" || currentTask == "buildWatch") {
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   postCSSPlugins.push(require("cssnano"))
+  config.module.rules.bootstrapIcoImport
   config.output = {
     publicPath: "/wp-content/themes/restaurant/bundled-assets/",
     filename: "[name].[chunkhash].js",

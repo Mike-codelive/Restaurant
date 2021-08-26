@@ -1,8 +1,12 @@
 {
   "name": "restaurant-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Premium theme for restaurant businesses",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mike-codelive/Restaurant"
+  },
   "scripts": {
     "dev": "npm-run-all -p devS buildWatch",
     "devS": "webpack-dev-server",
@@ -48,5 +52,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

@@ -10,33 +10,13 @@
 
 /* BEM Blocks */
 @import "modules/header";
-@import "modules/cards-coworking";
-@import "modules/solutions";
+/*@import "modules/page-banner";
+*/@import "modules/cowork";
+/*@import "modules/solutions";
 @import "modules/experience";
 @import "modules/productivity";
 @import "modules/carousel";
 @import "modules/reviews";
-
-
-
-
-@import "modules/shame";
-@import "modules/login";
-@import "modules/btn";
-@import "modules/my-notes";
-@import "modules/site-header";
-@import "modules/site-footer";
-@import "modules/main-navigation";
-@import "modules/page-banner";
-@import "modules/hero-slider";
-@import "modules/search-overlay";
-@import "modules/professor-card";
-@import "modules/headline";
-@import "modules/generic-content";
-@import "modules/full-width-split";
-@import "modules/event-summary";
-@import "modules/page-links";
-@import "modules/acf-map";
-@import "modules/link-list";
-@import "modules/metabox";
-@import "modules/post-item";
+@import "modules/insights";
+@import "modules/contact";
+@import "modules/footer";*/

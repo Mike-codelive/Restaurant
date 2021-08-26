@@ -1,22 +1,28 @@
-.page-banner {
+.banner {
 
   height: calc(100vh - 82px);
   max-width: 1900px;
+  margin: 0 auto;
 
-  &__bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;  
-    display: block;
+  &__header {
+    padding: 5rem 0;
+    & > * {
+      width: 100%;
+    }
+    h1 {
+      font-size: 4rem;
+    }
   }
 
-  &__select-bar {
+  &__hero {
+    height: 700px;
+  }
 
+  &__bar {
+    z-index: 9999;
     background-color: $primary-color;
     left: 11px;
     bottom: -1px !important;
-
     a.show {
       .rotate-select-arrow {
         transition: transform ease-in-out .5s;
@@ -35,30 +41,29 @@
       color: $primary-color;
     }
 
-    &-btn {
-      background-color: $tertiary-color;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
+  }
+
+  @media (min-width: 992px) {
+    &__header {
+      h1 {
+        margin-right: 3rem;
+      }
+      p {
+        padding: 0 5rem;
+      }
+      & > * {
+        width: 50%;
+      }
     }
-
+    &__bar {
+      position: absolute;
+    }
   }
 
-}
-
-@media (max-width: 992px) {
-  .page-banner__bg-image {
-    display: none;
+  @media (max-width: 992px) {
+    &__hero {
+      display: none;
+    }
   }
-}
 
-@media (min-width: 992px) {
-  .page-banner__select-bar {
-    position: absolute;
-  }
-}
-
-@media (min-height: 1200px) {
-  .page-banner {
-    height: 1200px;
-  }
 }

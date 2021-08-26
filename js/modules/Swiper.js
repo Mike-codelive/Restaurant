@@ -52,11 +52,9 @@ export let SwiperRev = new SwiperCore('#reviews__swipe', {
 
 })
 
-let arr1 = [1,2,3]
-let arr2 = ['a','b',3]
 
 
-function squared(arr1, arr2) {
+function compareClasses(arr1, arr2) {
 
 	let result = false
 	const intersection = arr1.filter(element => {
@@ -68,20 +66,7 @@ function squared(arr1, arr2) {
 	return result
 }
 
-squared(arr1, arr2)
 
-const compareClasses = (a,b) => {
-	a.forEach((elA, i) => {
-		b.forEach((elB, i) => {
-			if (elA === elB) {
-				console.log(elA, elB)
-				
-			}
-		})
-	})
-}
-
-// var newSwip = document.querySelector('#reviews__swipe').SwiperCore;
 
 let slideRev = document.querySelectorAll('.reviews__slide-card')
 let slideSwipe = document.querySelectorAll('.reviews-wrapper .swiper-slide')
@@ -103,7 +88,7 @@ SwiperRev.on('slideChangeTransitionEnd', () => {
 	// 		const classListSlide = [...slide.classList]
 	// 		// console.log(typeof classList, classList)
 	// 		// console.log(Object.values(rev.classList))
-	// 		if (slide.classList.contains('swiper-slide-active') && squared(classList, classListSlide) && ) {
+	// 		if (slide.classList.contains('swiper-slide-active') && compareClasses(classList, classListSlide) && ) {
 	// 			console.log('hit')
 	// 			rev.firstElementChild.classList.add('reviews__slide-card-show')
 	// 		}
@@ -120,7 +105,7 @@ SwiperRev.on('slideChangeTransitionEnd', () => {
 
 				slideRev.forEach((rev) => {
 					const classList = [...rev.classList]
-					if (squared(classListSlide, classList)) {
+					if (compareClasses(classListSlide, classList)) {
 						rev.firstElementChild.classList.add('reviews__slide-card-show')
 						// console.log('hit')
 					}
