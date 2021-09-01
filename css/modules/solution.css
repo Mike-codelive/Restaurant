@@ -1,0 +1,58 @@
+.solution {
+
+	margin-top: 3rem;
+
+	&__collapse {
+
+		height: 550px;
+		&:nth-of-type(2) {
+			width: 70%;
+		}
+	}
+	&__controls {
+		width: 30%;
+
+		a[aria-expanded="true"] {
+			color: $secondary-color !important;
+			span {
+				transition: transform ease-in-out .5s;
+				transform: rotate(-90deg);
+			}
+			.solution__card.collapse.show {
+				display: block !important;
+			}
+		}
+
+		a {
+			span {
+				transition: transform ease-in-out .5s;
+				transform: rotate(0);
+			}
+		}
+	}
+	&__card {
+		& > div {
+			height: 600px;
+			margin-bottom: 3rem;
+		}
+
+		p {
+			color: $quaternary-color;
+			margin-bottom: 5rem;
+		}
+
+		button {
+			background-color: transparent;
+			padding: 0;
+			text-align: center;
+			border: none;
+		}
+
+	}
+	#cards {
+		.openCard {
+			display: block !important;
+			height: 100% !important;
+		}
+	}
+}

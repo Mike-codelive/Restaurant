@@ -1,4 +1,4 @@
-let btnCollapse = document.querySelectorAll('p.solutions__collapse-buttons > [data-bs-toggle="collapse"]')
+let btnCollapse = document.querySelectorAll('p.solution__controls > [data-bs-toggle="collapse"]')
 let cardCollapse = document.querySelectorAll('[data-bs-parent="#cards"]')
 let prodIco = document.querySelectorAll('.prod__first-icons > div')
 let icoMaxWidth = 0

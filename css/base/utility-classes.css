@@ -20,7 +20,7 @@ button.btn-green--search {
   color: $primary-color !important;
 }
 
-a.link-green {
+.link-green {
   color: $tertiary-color !important;
 }
 

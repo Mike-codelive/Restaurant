@@ -26,32 +26,32 @@
 			transform: translate(3px, 7px);
 			box-shadow: 0 .7rem 1rem hsl(166deg 85% 20%) !important;
 		}
-
 	}
 
-	.container-lg > div:last-child > div:first-child {
+	&__box > div:last-child > div:first-child {
 		margin-right: 15rem;
 	}
 
-}
-
-@media (max-width: 992px) {
-	.container-lg > div:last-child {
-		flex-wrap: wrap;
-	}
-	.experience .container-lg > div:last-child > div:first-child {
-		margin-right: 0;
-	}
-}
-
-@media (min-width: 1020px) {
-
-	.experience > .container-lg > div > a {
-		position: absolute;
-		margin-top: 0;
+	@media (max-width: 992px) {
+		&__box {
+			div:last-child {
+				flex-wrap: wrap;
+				div:first-child {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 
-	.experience > .container-lg > .position-relative {
-		display: block !important;
+	@media (min-width: 1020px) {
+
+		&__btn {
+			position: absolute;
+			margin-top: 0;
+		}
+
+		&__box-1 {
+			display: block !important;
+		}
 	}
 }

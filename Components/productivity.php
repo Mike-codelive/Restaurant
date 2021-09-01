@@ -54,6 +54,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="prod__second d-flex d-lg-block justify-content-center align-items-center position-relative">
 	<img class="d-none d-lg-block" src="<?php echo get_theme_file_uri('/images/barksalot.jpg') ?>" alt="productivity">
 	<div class="top-0 end-0 text-light py-3 px-4">
