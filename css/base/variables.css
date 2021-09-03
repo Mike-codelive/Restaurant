@@ -15,7 +15,6 @@ $yellowIcons: hsl(24deg 100% 48%);
 
 
 
-
 $primary-color: $white;
 $secondary-color: $dark;
 $tertiary-color: $green;
@@ -25,5 +24,8 @@ $senary-color: $shadowT;
 
 
 
+$x-position: calc(50% - 125px);
 
-$x-position: calc(50% - 125px)
+
+
+$animation-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55)

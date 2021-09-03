@@ -22,7 +22,7 @@
 	&__second {
 
 		flex: 0 0 50%;
-		height: 450px;
+
 		img {
 			width: calc(100% - 125px);
 			height: 100%;
@@ -61,6 +61,7 @@
 		&__first {
 			padding-right: 4rem;
 		}
+
 		&__second {
 			div {
 				position: absolute;

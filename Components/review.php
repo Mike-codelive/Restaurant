@@ -1,17 +1,17 @@
-<section class="reviews mb-5">
+<section class="review mb-5">
 
 	<div class="container-lg">
 		<div class="d-flex flex-wrap justify-content-end mb-5 me-lg-0 pe-lg-0">
-			<div class="reviews__title text-center text-lg-start">
+			<div class="review__text text-center text-lg-start">
 				<h1 class="mb-4 fw-bolder">Reviews</h1>
 				<p>Over 10,000 happy clients! Are you the next one?</p>
 			</div>
 
-			<div class="position-relative reviews__slide d-none d-lg-block">
+			<div class="position-relative review__slider d-none d-lg-block">
 
-				<div class="reviews__slide-card slide-1">
-					<div class="reviews__slide-card-show">
-						<div class="reviews__slide-text">
+				<div class="review__slider-card slide-1">
+					<div class="review__slider-card-show">
+						<div class="review__slider-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem magni quibusdam delectus molestiae eum voluptate repellat iste deserunt deleniti.
 							</p>
 							<h3>Lee Morgan</h3>
@@ -34,14 +34,14 @@
 								star
 							</span>
 						</div>
-						<span class="reviews__slide-social material-icons-outlined">
+						<span class="review__slider-social material-icons-outlined">
 							people
 						</span>
 					</div>
 				</div>
-				<div class="reviews__slide-card slide-2">
+				<div class="review__slider-card slide-2">
 					<div>
-						<div class="reviews__slide-text">
+						<div class="review__slider-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem magni quibusdam delectus molestiae eum voluptate repellat iste deserunt deleniti.
 							</p>
 							<h3>Ulisess </h3>
@@ -64,14 +64,14 @@
 								star
 							</span>
 						</div>
-						<span class="reviews__slide-social material-icons-outlined">
+						<span class="review__slider-social material-icons-outlined">
 							people
 						</span>
 					</div>
 				</div>
-				<div class="reviews__slide-card slide-3">
+				<div class="review__slider-card slide-3">
 					<div>
-						<div class="reviews__slide-text">
+						<div class="review__slider-text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem magni quibusdam delectus molestiae eum voluptate repellat iste deserunt deleniti.
 							</p>
 							<h3>Stephen Grider</h3>
@@ -94,55 +94,57 @@
 								star
 							</span>
 						</div>
-						<span class="reviews__slide-social material-icons-outlined">
+						<span class="review__slider-social material-icons-outlined">
 							people
 						</span>
 					</div>
 				</div>
 
 			</div>
+
+
+
 			<!-- Slider main container -->
-			<div class="swiper-container d-none d-lg-block mx-lg-0" id="reviews__swipe">
+			<div class="swiper-container d-none d-lg-block mx-lg-0" id="review__swipe">
 				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper reviews-wrapper">
+				<div class="swiper-wrapper review-wrapper">
 					<!-- Slides -->
 					<div class="swiper-slide slide-1">
-						<div class="reviews__item">
+						<div class="review__item">
 							<img class="img-fluid" src="<?php echo get_theme_file_uri('/images/reviews/rev-1.jpg') ?>">
 						</div>
 					</div>
 					<div class="swiper-slide slide-2">
-						<div class="reviews__item">
+						<div class="review__item">
 							<img class="img-fluid" src="<?php echo get_theme_file_uri('/images/reviews/rev-2.jpg') ?>">
 						</div>
 					</div>
 					<div class="swiper-slide slide-3">
-						<div class="reviews__item">
+						<div class="review__item">
 							<img class="img-fluid" src="<?php echo get_theme_file_uri('/images/reviews/rev-3.jpg') ?>">
 						</div>
 					</div>
 
 				</div>
-				<!-- If we need pagination -->
-				<!-- <div class="swiper-pagination"></div> -->
 
-				<!-- If we need scrollbar -->
-				<!-- <div class="swiper-scrollbar"></div> -->
 			</div>
 
 			<!-- If we need navigation buttons -->
 			<div class="swipe-arrows align-self-end me-5 mt-5 d-none d-lg-flex  d-lg-block">
-				<div class="swiper-button-prev" id="swipe-rev-btn-prev">
+
+				<div class="swiper-button-prev" id="rev-swipe-btn-prev">
 					<span class="material-icons-outlined">
 						west
 					</span>
 				</div>
-				<div class="swiper-button-next" id="swipe-rev-btn-next">
+				<div class="swiper-button-next" id="rev-swipe-btn-next">
 					<span class="material-icons-outlined">
 						east
 					</span>
 				</div>
+
 			</div>
+
 		</div>
 
 		<div class="d-flex justify-content-center align-items-center flex-column">

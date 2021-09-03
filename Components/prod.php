@@ -1,6 +1,7 @@
 <section class="prod">
 	
-	<div class="container-lg d-flex flex-column flex-lg-row">
+	<div class="container-lg d-flex flex-column flex-lg-row align-items-lg-stretch">
+
 		<div class="prod__first text-dark mb-5 mb-lg-0">
 			<div class="mb-5">
 				<h6>WHY <span class="prod__title site-title"><?php echo get_bloginfo( 'name' ); ?></span>
@@ -41,6 +42,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="prod__icon prod__icon-lg">
 			<div class="d-flex bg-white">
 				<span class="material-icons-outlined">
@@ -52,6 +54,8 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 </div>
 

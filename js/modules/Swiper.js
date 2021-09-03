@@ -34,24 +34,19 @@ export let Swiper = new SwiperCore('#car__swipe', {
 
 })
 
-export let SwiperRev = new SwiperCore('#reviews__swipe', {
+export let SwiperRev = new SwiperCore('#review__swipe', {
 
-	// autoplay: {
-	// 	delay: 1000,
-	// },
 	allowTouchMove: false,
 	loop: true,
 	speed: 500,
-	spaceBetween: 30,
+	spaceBetween: 20,
 	slidesPerView: "auto",
 	navigation: {
-		nextEl: '#swipe-rev-btn-next',
-		prevEl: '#swipe-rev-btn-prev'
+		nextEl: '#rev-swipe-btn-next',
+		prevEl: '#rev-swipe-btn-prev'
 	},
-	// slideActiveClass: 'any'
 
 })
-
 
 
 function compareClasses(arr1, arr2) {
@@ -68,52 +63,31 @@ function compareClasses(arr1, arr2) {
 
 
 
-let slideRev = document.querySelectorAll('.reviews__slide-card')
-let slideSwipe = document.querySelectorAll('.reviews-wrapper .swiper-slide')
+let slideRev = document.querySelectorAll('.review__slider-card')
+let slideSwipe = document.querySelectorAll('.review-wrapper .swiper-slide')
 
 
 
 SwiperRev.on('slideChangeTransitionEnd', () => {
-	// console.log('hit!')
 
 	slideRev.forEach((rev) => {
-		rev.firstElementChild.classList.remove('reviews__slide-card-show')
-		// console.log(rev.firstElementChild.classList)
+		rev.firstElementChild.classList.remove('review__slider-card-show')
 	}) 
-
-	// slideRev.forEach((rev) => {
-	// 	slideSwipe.forEach((slide) => {
-
-	// 		const classList = [...rev.classList]
-	// 		const classListSlide = [...slide.classList]
-	// 		// console.log(typeof classList, classList)
-	// 		// console.log(Object.values(rev.classList))
-	// 		if (slide.classList.contains('swiper-slide-active') && compareClasses(classList, classListSlide) && ) {
-	// 			console.log('hit')
-	// 			rev.firstElementChild.classList.add('reviews__slide-card-show')
-	// 		}
-
-	// 	})
-	// })
 
 	slideSwipe.forEach((slide) => {
 
-			// console.log(typeof classList, classList)
-			// console.log(Object.values(rev.classList))
-			if (slide.classList.contains('swiper-slide-active')) {
-				const classListSlide = [...slide.classList]
+		if (slide.classList.contains('swiper-slide-active')) {
+			const classListSlide = [...slide.classList]
 
-				slideRev.forEach((rev) => {
-					const classList = [...rev.classList]
-					if (compareClasses(classListSlide, classList)) {
-						rev.firstElementChild.classList.add('reviews__slide-card-show')
-						// console.log('hit')
-					}
-					
-				})
-			}
+			slideRev.forEach((rev) => {
+				const classList = [...rev.classList]
+				if (compareClasses(classListSlide, classList)) {
+					rev.firstElementChild.classList.add('review__slider-card-show')
+				}
 
-		})
+			})
+		}
 
+	})
 
 })

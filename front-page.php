@@ -85,10 +85,10 @@
 // get_template_part('Components/cowork', 'cowork');
 // get_template_part('Components/solution', 'solution');
 // get_template_part('Components/experience', 'experience');
-get_template_part('Components/productivity', 'productivity');
+// get_template_part('Components/prod', 'prod');
 // get_template_part('Components/carousel', 'carousel');
-// get_template_part('Components/reviews', 'reviews');
-// get_template_part('Components/insights', 'insights');
+// get_template_part('Components/review', 'review');
+get_template_part('Components/insight', 'insight');
 // get_template_part('Components/contact', 'contact');
 ?>
 
