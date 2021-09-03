@@ -131,6 +131,7 @@
     contentBasePublicPath: "http://localhost:3000/",
     hot: true,
     port: 3000,
+    inline: true,
     headers: {
       "Access-Control-Allow-Origin": "*"
     }

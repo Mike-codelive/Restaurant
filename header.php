@@ -9,31 +9,34 @@
 
   <header>
 
-    <nav class="navbar container-md navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar__brand text-decoration-none text-dark fw-bolder fs-4" href="#"><span class="site-title"><?php echo get_bloginfo( 'name' ); ?></span></a>
+    <nav class="navbar bgc-white container-md navbar-expand-xl navbar-light">
+      <div class="container-fluid align-items-baseline">
+
+        <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="#"><span class="site-title"><?php echo get_bloginfo( 'name' ); ?></span>.</a>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
 
           <div class="navbar__links">
-            <ul class="text-center mb-3 mb-lg-0 d-flex flex-column flex-lg-row mb-3 mb-lg-0">
+            <ul class="text-center mb-3 mb-xl-0 d-flex flex-column flex-xl-row">
               <li class="nav-item">
-                <a class="nav-link navbar__link active" aria-current="page" href="#"><span> Home</span></a>
+                <a class="nav-link active" aria-current="page" href="#"><span> Home</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar__link" href="#"> <span>Features</span></a>
+                <a class="nav-link" href="#"> <span>Coworkspace</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navbar__link" href="#"> <span>Pricing</span></a>
+                <a class="nav-link" href="#"> <span>Services</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <span>Reviews</span></a>
               </li>
             </ul>
           </div>
           
-
-          <div class="container-fluid d-flex justify-content-center justify-content-lg-end">
-            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn-green btn-green--nav p-1 px-3" role="group">Login</button>
+          <div class="container-fluid d-flex justify-content-center justify-content-xl-end">
+            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn-green shadow-none btn-green--nav" role="group">Sign Up</button>
           </div>
 
         </div>

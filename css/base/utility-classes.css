@@ -2,7 +2,7 @@
   text-transform: capitalize;
 }
 
-button.btn-green {
+.btn-green {
   background-color: $tertiary-color !important;
   color: $primary-color !important;
   border: 1px solid transparent;
@@ -15,9 +15,20 @@ button.btn-green {
   }
 }
 
-button.btn-green--search {
+.btn-green--search {
   background-color: $tertiary-color !important;
   color: $primary-color !important;
+}
+
+.btn-green--nav {
+  padding: .5rem 1.7rem;
+  background-color: $primary-color !important;
+  border-color: $tertiary-color !important;
+  color: $tertiary-color !important;
+  &:hover {
+    background-color: $tertiary-color !important;
+    color: $primary-color !important;
+  }
 }
 
 .link-green {
@@ -33,3 +44,15 @@ button.btn-green--search {
 .ico-stars {
   color: $yellowIcons;
 }
+
+.bgc-dark {
+  background-color: $secondary-color;
+}
+
+.bgc-white {
+  background-color: $primary-color;
+}
+
+
+
+

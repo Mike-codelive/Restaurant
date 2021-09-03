@@ -1,19 +1,19 @@
 
-@import "base/_custom";
+@import 'bootstrap/dist/css/bootstrap.min.css';
 @import "base/variables";
 @import "base/baseline";
 @import "base/utility-classes";
 
 
 
-@import "modules/header";
-/*@import "modules/page-banner";
-*//*@import "modules/cowork";*/
-/*@import "modules/solution";*/
-/*@import "modules/experience";*/
-/*@import "modules/prod";*/
-/*@import "modules/carousel";*/
-/*@import "modules/review";*/
+@import "modules/navbar";
+@import "modules/page-banner";
+@import "modules/cowork";
+@import "modules/solution";
+@import "modules/experience";
+@import "modules/prod";
+@import "modules/carousel";
+@import "modules/review";
 @import "modules/insight";
-/*@import "modules/contact";
-@import "modules/footer";*/
+@import "modules/contact";
+@import "modules/footer";

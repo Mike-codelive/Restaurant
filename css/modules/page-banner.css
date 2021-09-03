@@ -1,6 +1,6 @@
 .banner {
 
-  height: calc(100vh - 82px);
+
   max-width: 1900px;
   margin: 0 auto;
 
@@ -15,7 +15,8 @@
   }
 
   &__hero {
-    height: 700px;
+    height: calc(100vh - 82px);
+    margin: 0 auto;
   }
 
   &__bar {
