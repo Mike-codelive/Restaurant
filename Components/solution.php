@@ -36,7 +36,7 @@
 
 		<div class="row mx-0" id="cards">
 			<div class="col position-relative">
-				<div class="collapse show multi-collapse" id="multiCollapseExample1" data-bs-parent="#cards">
+				<div class="collapse openCard show multi-collapse" id="multiCollapseExample1" data-bs-parent="#cards">
 					<div class="solution__card card card-body border-0">
 						<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vrah18bW9w0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia temporibus dignissimos sapiente vero ut blanditiis vel eligendi quasi rem nemo molestiae maxime sint quas, iusto.</p>

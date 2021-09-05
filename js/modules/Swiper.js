@@ -1,4 +1,5 @@
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper/core'
+import "swiper/swiper.min.css"
 
 SwiperCore.use([Autoplay, Pagination, Navigation])
 

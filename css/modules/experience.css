@@ -4,21 +4,19 @@
 
 	img {
 		height: 500px;
-		object-fit: cover;
 	}
 
 	a {
 		background-color: $tertiary-color;
+		color: $primary-color;
 		font-size: 2rem;
 		box-shadow: 0 1.2rem 1rem hsl(166deg 85% 20%) !important;
-		bottom: 60px !important;
-		right: -40px;
 		transition-property: transform, box-shadow;
 		transition: ease-in-out .3s;
 		position: initial;
 		margin-top: 1.5rem;
 
-		& span {
+		span {
 			opacity: .8;
 		}
 
@@ -45,13 +43,23 @@
 
 	@media (min-width: 1020px) {
 
-		&__btn {
-			position: absolute;
-			margin-top: 0;
-		}
-
 		&__box-1 {
 			display: block !important;
+		}
+
+		&__box-2 div:last-child {
+			margin-top: 19px
+		}
+
+		&__btn {
+			position: absolute !important;
+			right: 0;
+			bottom: 20%;
+			transform: translateX(50%);
+			&:hover {
+				transform: translate(45%, 15px) !important;
+				box-shadow: 0 0.6rem 1rem hsl(166deg 85% 20%) !important;
+			}
 		}
 	}
 }

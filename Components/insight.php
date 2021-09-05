@@ -1,11 +1,12 @@
-
-<?php require_once '_api.php'; ?>
 <section class="insight">
+
 	<div class="container-lg d-flex flex-column mb-5">
 
 		<div class="d-flex flex-column flex-md-row  justify-content-center justify-content-md-between align-items-center align-items-md-baseline mb-5">
 			<h1 class="mb-5 mb-md-0 text-center">News, updates and insights</h1>
-			<?php linkSite(); ?>
+			<?php
+			greenBtn();
+			?>
 		</div>
 
 

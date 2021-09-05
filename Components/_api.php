@@ -1,25 +1,18 @@
 <?php
 
-function linkSite($btnStyles = NULL) {
-	$btnStyles;
-	$anchore = '';
-	$siteTitle = '';
-	$materialIco = '';
-	if ($btnStyles) {
-		foreach ($btnStyles as $el => $class) {
-			$anchore = $el === 'anchore' ? $class : '';
-			$siteTitle = $el === 'title' ? $class : '';
-			$materialIco = $el === 'icon' ? $class : '';
-		}	
-	}
+function greenBtn() {
 
-	$btn = '<a type="button" class="btn link-green shadow-none border-0 bg-transparent py-0 d-flex align-items-center '.$anchore.'">Ideas by <span class="site-title '.$siteTitle.'">'. get_bloginfo( 'name' ) . '</span>
-	<span class="material-icons-outlined ms-2 '.$materialIco.'">
+	$siteName = get_bloginfo('name');
+
+	$signupBtn = <<<HTML
+	<a type="button" class="btn link-green shadow-none border-0 bg-transparent py-0 d-flex align-items-center">Ideas by <span class="site-title">$siteName</span>
+	<span class="material-icons-outlined ms-2">
 	chevron_right
 	</span>
-	</a>';
+	</a>
+	HTML;
 
-	echo $btn;
+	echo $signupBtn;
 }
 
 ?>

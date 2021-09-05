@@ -1,5 +1,5 @@
 <footer>
-  <div class="container-lg my-5">
+  <div class="footer container-lg my-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
 
       <div class="footer__block col ps-5 ps-lg-3">

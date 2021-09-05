@@ -15,6 +15,16 @@
   }
 }
 
+.btn-white {
+  color: $primary-color !important;
+  .material-icons-outlined {
+    transition: transform ease-out .5s;
+  }
+  &:hover .material-icons-outlined {
+    transform: rotate(90deg);
+  }
+}
+
 .btn-green--search {
   background-color: $tertiary-color !important;
   color: $primary-color !important;
@@ -52,7 +62,5 @@
 .bgc-white {
   background-color: $primary-color;
 }
-
-
 
 

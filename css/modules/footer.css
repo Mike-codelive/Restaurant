@@ -1,4 +1,4 @@
-footer {
+.footer {
 
 	&__block {
 		display: flex;
@@ -9,7 +9,6 @@ footer {
 		}
 		a {
 			color: $quaternary-color;
-			text-decoration: none;
 			margin-bottom: 1rem;
 		}
 	}

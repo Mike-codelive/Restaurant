@@ -1,4 +1,4 @@
-<section class="review mb-5">
+<section class="review">
 
 	<div class="container-lg">
 		<div class="d-flex flex-wrap justify-content-end mb-5 me-lg-0 pe-lg-0">
@@ -103,7 +103,6 @@
 			</div>
 
 
-
 			<!-- Slider main container -->
 			<div class="swiper-container d-none d-lg-block mx-lg-0" id="review__swipe">
 				<!-- Additional required wrapper -->
@@ -169,7 +168,7 @@
 				</div>
 				<p>4.56 / 5.0</p>
 			</div>
-			<button type="button" class="btn btn-green d-inline shadow-none border-0 px-4 py-2">Read 1,262 more reviews</button>
+			<button type="button" class="btn btn-green shadow-none px-4 py-2">Read 1,262 more reviews</button>
 		</div>
 	</div>
 
