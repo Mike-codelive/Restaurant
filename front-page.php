@@ -75,7 +75,7 @@ require_once('Components/_api.php')
       </div>
     </div>
 
-    <button type="button" class="btn page-banner__select-bar-btn shadow-none border-0 px-md-4 btn-green--search">BOOK <br> NOW</button>
+    <button type="button" class="btn btn--search page-banner__select-bar-btn shadow-none border-0 px-md-4 ">BOOK <br> NOW</button>
   </div>
 
 </div>

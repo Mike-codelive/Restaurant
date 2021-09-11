@@ -36,7 +36,7 @@
           </div>
           
           <div class="container-fluid d-flex justify-content-center justify-content-xl-end">
-            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn-green shadow-none btn-green--nav" role="group">Sign Up</button>
+            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--green-nav" role="group">Sign Up</button>
           </div>
 
         </div>
