@@ -168,7 +168,7 @@
 				</div>
 				<p>4.56 / 5.0</p>
 			</div>
-			<button type="button" class="btn btn-green shadow-none px-4 py-2">Read 1,262 more reviews</button>
+			<button type="button" class="btn btn--green shadow-none px-4 py-2">Read 1,262 more reviews</button>
 		</div>
 	</div>
 

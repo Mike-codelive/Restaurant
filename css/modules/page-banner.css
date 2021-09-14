@@ -1,6 +1,5 @@
 .banner {
 
-
   max-width: 1900px;
   margin: 0 auto;
 
@@ -10,7 +9,7 @@
       width: 100%;
     }
     h1 {
-      font-size: 4rem;
+      font-size: 2rem;
     }
   }
 
@@ -48,6 +47,7 @@
     &__header {
       h1 {
         margin-right: 3rem;
+        font-size: 4rem;
       }
       p {
         padding: 0 5rem;

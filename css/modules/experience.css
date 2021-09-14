@@ -6,9 +6,8 @@
 		height: 500px;
 	}
 
-	a {
+	&__btn {
 		background-color: $tertiary-color;
-		color: $primary-color;
 		font-size: 2rem;
 		box-shadow: 0 1.2rem 1rem hsl(166deg 85% 20%) !important;
 		transition-property: transform, box-shadow;
@@ -24,10 +23,6 @@
 			transform: translate(3px, 7px);
 			box-shadow: 0 .7rem 1rem hsl(166deg 85% 20%) !important;
 		}
-	}
-
-	&__box > div:last-child > div:first-child {
-		margin-right: 15rem;
 	}
 
 	@media (max-width: 992px) {
@@ -47,8 +42,14 @@
 			display: block !important;
 		}
 
-		&__box-2 div:last-child {
-			margin-top: 19px
+		&__box-2 {
+			& div:last-child {
+				margin-top: 19px
+			}
+			& div:first-child {
+				margin-right: 15rem;
+				max-width: 50%;
+			}
 		}
 
 		&__btn {

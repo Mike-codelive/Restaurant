@@ -1,6 +1,6 @@
 <?php
 
-function pageBanner($args = NULL) {
+/*function pageBanner($args = NULL) {
 
   if (!$args['title']) {
     $args['title'] = get_the_title();
@@ -26,9 +26,52 @@ function pageBanner($args = NULL) {
       <div class="page-banner__intro">
         <p><?php echo $args['subtitle']; ?></p>
       </div>
-    </div>  
+    </div>
   </div>
-<?php }
+<?php }*/
+
+// function trimString($string, $len) {
+//   if (!$len) {
+//     $len = -1;
+//   }
+//   // return substr($string, start)
+//   echo $string ? wordwrap(substr($string, 0, $len), $len, "...") : $string;
+//   // return $boolean;
+// }
+
+// function postContent($conItem = '', $len = false) {
+
+//   // foreach ($conItem as $key => $value) {
+//   //   $title = $key == 'title' ? trimString(get_the_title(), $len) : 'kitchen';
+//   //   $excerpt = $key == 'excerpt' ? trimString(get_the_excerpt(), $len) : 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit';
+//   //   $content = $key == 'content' ? trimString(get_the_content(), $len) : 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit';
+//   // }
+
+
+//   // $contentBase;
+//   switch ($conItem) {
+//     case 'content';
+//     echo trimString(get_the_content(), $len);
+//     break;
+
+//     default:
+//       // code...
+//     break;
+//   }
+
+//   // echo $contentBase;
+
+
+//   // $title = strlen(get_the_title()) == 0 ? 'kitchen' : trimString(get_the_title(), $len);
+//   // $excerpt = strlen(get_the_excerpt()) == 0 ? 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit' : trimString(get_the_excerpt(), $len);
+//   // $content = strlen(get_the_content()) == 0 ? 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit' : trimString(get_the_content(), $len);
+
+//   // echo wp_trim_words(get_the_content(), 18);
+//   // substr(, start)
+//   // wordwrap(substr($content, $), 20, "<br />\n");
+
+// }
+
 
 function university_files() {
   wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
@@ -86,4 +129,51 @@ function university_adjust_queries($query) {
 
 add_action('pre_get_posts', 'university_adjust_queries');
 
+
+function hero_callout($wp_customize) {
+  $wp_customize->add_section('hero_callout_section', array(
+    'title' => 'Hero'
+  ));
+  $wp_customize->add_setting('hero_callout_display', array(
+    'default' => 'yes'
+  ));
+  $wp_customize->add_control(new WP_customize_control($wp_customize, 'hero_callout_display_control', array(
+    'label' => 'display',
+    'section' => 'hero_callout_section',
+    'settings' => 'hero_callout_display',
+    'type' => 'select',
+    'choices' => array(
+      false => 'no',
+      true => 'yes'
+    )
+  )));
+  $wp_customize->add_setting('hero_callout_headline', array(
+    'default' => 'Welcome to our Restaurant'
+  ));
+  $wp_customize->add_control(new WP_customize_control($wp_customize, 'hero_callout_headline_control', array(
+    'label' => 'headline',
+    'section' => 'hero_callout_section',
+    'settings' => 'hero_callout_headline'
+  )));
+  $wp_customize->add_setting('hero_callout_paragraph', array(
+    'default' => "Revolutionize you workspace. Whether you're an established enterprise or a growing startup, discover spaces that inspire you most impactful work."
+  ));
+  $wp_customize->add_control(new WP_customize_control($wp_customize, 'hero_callout_paragraph_control', array(
+    'label' => 'paragraph',
+    'section' => 'hero_callout_section',
+    'settings' => 'hero_callout_paragraph',
+    'type' => 'textarea'
+  )));
+
+  $wp_customize->add_setting('hero_callout_image');
+  $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'hero_callout_image_control', array(
+    'label' => 'image',
+    'section' => 'hero_callout_section',
+    'settings' => 'hero_callout_image',
+    'width' => 1080,
+    'height' => 720
+  )));
+};
+
+add_action('customize_register', 'hero_callout');
 // show_admin_bar( false );
