@@ -7,7 +7,6 @@ while(have_posts()) {
     // pageBanner();
   ?>
 
-
   <container class="post">
 
     <div class="container-lg d-flex flex-column mb-5">

@@ -1,3 +1,11 @@
+<?php 
+/**
+ * Main template header.
+ *
+ * @package Restaurant
+ */
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -7,12 +15,35 @@
 </head>
 <body <?php body_class(); ?>>
 
+  <?php
+  if ( function_exists( 'wp_body_open' ) ) {
+    wp_body_open();
+  }
+  ?>
+
   <header>
 
     <nav class="navbar bgc-white container-md navbar-expand-xl navbar-light">
       <div class="container-fluid align-items-baseline">
 
-        <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="#"><span class="site-title"><?php echo get_bloginfo( 'name' ); ?></span>.</a>
+        <!--         <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="#"><span class="site-title"><?php echo get_bloginfo( 'name' ); ?></span>.</a> -->
+
+
+        <?php 
+        if ( function_exists( 'the_custom_logo' )) {
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
+          if ( has_custom_logo() ) {
+            echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+          } else {
+            echo '<a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="#"><span class="site-title">Restaurant</span>.</a>';
+          }
+        }
+
+        ?>
+
+
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,7 +65,7 @@
               </li>
             </ul>
           </div>
-          
+
           <div class="container-fluid d-flex justify-content-center justify-content-xl-end">
             <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--nav" role="group">Sign Up</button>
           </div>

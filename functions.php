@@ -1,98 +1,61 @@
 <?php
-
-/*function pageBanner($args = NULL) {
-
-  if (!$args['title']) {
-    $args['title'] = get_the_title();
-  }
-
-  if (!$args['subtitle']) {
-    $args['subtitle'] = get_field('page_banner_subtitle');
-  }
-
-  if (!$args['photo']) {
-    if (get_field('page_banner_background_image')) {
-      $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
-    } else {
-      $args['photo'] = get_theme_file_uri('/images/ocean.jpg');
-    }
-  }
-
-  ?>
-  <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo']; ?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title"><?php echo $args['title'] ?></h1>
-      <div class="page-banner__intro">
-        <p><?php echo $args['subtitle']; ?></p>
-      </div>
-    </div>
-  </div>
-<?php }*/
-
-// function trimString($string, $len) {
-//   if (!$len) {
-//     $len = -1;
-//   }
-//   // return substr($string, start)
-//   echo $string ? wordwrap(substr($string, 0, $len), $len, "...") : $string;
-//   // return $boolean;
-// }
-
-// function postContent($conItem = '', $len = false) {
-
-//   // foreach ($conItem as $key => $value) {
-//   //   $title = $key == 'title' ? trimString(get_the_title(), $len) : 'kitchen';
-//   //   $excerpt = $key == 'excerpt' ? trimString(get_the_excerpt(), $len) : 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit';
-//   //   $content = $key == 'content' ? trimString(get_the_content(), $len) : 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit';
-//   // }
+/**
+ * funtions file.
+ *
+ * @package Restaurant
+ */
 
 
-//   // $contentBase;
-//   switch ($conItem) {
-//     case 'content';
-//     echo trimString(get_the_content(), $len);
-//     break;
-
-//     default:
-//       // code...
-//     break;
-//   }
-
-//   // echo $contentBase;
+// print_r(filemtime( get_template_directory() . '/bundled-assets/vendors~scripts.c61091bb2e8c5230afd2.js'));
+// print_r(get_template_directory());
 
 
-//   // $title = strlen(get_the_title()) == 0 ? 'kitchen' : trimString(get_the_title(), $len);
-//   // $excerpt = strlen(get_the_excerpt()) == 0 ? 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit' : trimString(get_the_excerpt(), $len);
-//   // $content = strlen(get_the_content()) == 0 ? 'recent content Lorem, ipsum dolor sit amet consectetur, adipisicing elit' : trimString(get_the_content(), $len);
-
-//   // echo wp_trim_words(get_the_content(), 18);
-//   // substr(, start)
-//   // wordwrap(substr($content, $), 20, "<br />\n");
-
-// }
-
-
-function university_files() {
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
-  // wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-  wp_enqueue_style('Material-Icons', '//fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
-  wp_enqueue_style('Bootstrap-Ico', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
-  
-  // wp_enqueue_script('gSap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', NULL, '1.0', true); 
-
-  if (strstr($_SERVER['SERVER_NAME'], 'restaurant.local')) {
-
-    wp_enqueue_script('main-university-js', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
-
-  } else {
-    wp_enqueue_script('our-vendors-js', get_theme_file_uri('/bundled-assets/vendors~scripts.df2f99216876fb9b504e.js'), NULL, '1.0', true);
-    wp_enqueue_script('main-university-js', get_theme_file_uri('/bundled-assets/scripts.ce8718c0ff8b0537b614.js'), NULL, '1.0', true);
-    wp_enqueue_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.ce8718c0ff8b0537b614.css'));
-  }
+if ( ! defined( 'RESTAURANT_DIR_PATH' ) ) {
+  define( 'RESTAURANT_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }
 
-add_action('wp_enqueue_scripts', 'university_files');
+if ( ! defined( 'RESTAURANT_DIR_URI' ) ) {
+  define( 'RESTAURANT_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
+}
+
+
+
+require_once RESTAURANT_DIR_PATH . '/inc/helpers/autoloader.php';
+
+function restaurant_get_theme_instance() {
+  \RESTAURANT_THEME\Inc\RESTAURANT_THEME::get_instance();
+}
+
+
+restaurant_get_theme_instance();
+
+function restaurant_scripts() {
+  // wp_register_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
+  // wp_register_style('Material-Icons', '//fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
+  // wp_register_style('Bootstrap-Ico', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+  // // wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  // // wp_enqueue_script('gSap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js', NULL, '1.0', true); 
+
+  // wp_enqueue_style('custom-google-fonts');
+  // wp_enqueue_style('Material-Icons');
+  // wp_enqueue_style('Bootstrap-Ico');
+
+  // if (strstr($_SERVER['SERVER_NAME'], 'restaurant.local')) {
+
+  //   wp_enqueue_script('main-restaurant-js', 'http://localhost:3000/bundled.js', [], '1.0', true);
+
+  // } else {
+  //   wp_register_script('our-vendors-js', get_theme_file_uri('/bundled-assets/vendors~scripts.c61091bb2e8c5230afd2.js'), [], filemtime( get_template_directory() . '/bundled-assets/vendors~scripts.c61091bb2e8c5230afd2.js'), true);
+  //   wp_register_script('main-restaurant-js', get_theme_file_uri('/bundled-assets/scripts.f894f1b93dab7ff89ab0.js'), [], filemtime( get_template_directory() . '/bundled-assets/scripts.f894f1b93dab7ff89ab0.js'), true);
+  //   wp_register_style('our-main-styles', get_theme_file_uri('/bundled-assets/styles.f894f1b93dab7ff89ab0.css'), [], filemtime( get_template_directory() . '/bundled-assets/styles.f894f1b93dab7ff89ab0.css'));
+
+  //   wp_enqueue_script('our-vendors-js');
+  //   wp_enqueue_script('main-restaurant-js');
+  //   wp_enqueue_style('our-main-styles');
+  // }
+}
+
+// add_action('wp_enqueue_scripts', 'restaurant_scripts');
 
 function university_features() {
   add_theme_support('title-tag');
@@ -102,7 +65,7 @@ function university_features() {
   add_image_size('pageBanner', 1500, 350, true);
 }
 
-add_action('after_setup_theme', 'university_features');
+// add_action('after_setup_theme', 'university_features');
 
 function university_adjust_queries($query) {
   if (!is_admin() AND is_post_type_archive('program') AND is_main_query()) {
@@ -176,4 +139,5 @@ function hero_callout($wp_customize) {
 };
 
 add_action('customize_register', 'hero_callout');
-// show_admin_bar( false );
+
+// show_admin_bar( true );
