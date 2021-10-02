@@ -2,12 +2,12 @@
 /**
  * Register Menus
  *
- * @package Aquila
+ * @package Restaurant
  */
 
-namespace AQUILA_THEME\Inc;
+namespace RESTAURANT_THEME\Inc;
 
-use AQUILA_THEME\Inc\Traits\Singleton;
+use RESTAURANT_THEME\Inc\Traits\Singleton;
 
 class Menus {
 
@@ -29,8 +29,8 @@ class Menus {
 
 	public function register_menus() {
 		register_nav_menus([
-			'aquila-header-menu' => esc_html__( 'Header Menu', 'aquila' ),
-			'aquila-footer-menu' => esc_html__( 'Footer Menu', 'aquila' ),
+			'restaurant-header-menu' => esc_html__( 'Header Menu', 'restaurant' ),
+			'restaurant-footer-menu' => esc_html__( 'Footer Menu', 'restaurant' ),
 		]);
 	}
 

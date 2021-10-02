@@ -11,6 +11,9 @@
 			color: $quaternary-color;
 			margin-bottom: 1rem;
 		}
+		img {
+			width: auto;
+		}
 	}
 	&__links-text {
 		font-weight: bolder;

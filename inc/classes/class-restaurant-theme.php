@@ -2,7 +2,7 @@
 /**
  * Bootstraps the Theme.
  *
- * @package Aquila
+ * @package Restaurant
  */
 
 namespace RESTAURANT_THEME\Inc;
@@ -13,10 +13,10 @@ class RESTAURANT_THEME {
 	use Singleton;
 
 	protected function __construct() {
-		// die('123 INSTANCE');
 		// Load class.
 		Assets::get_instance();
-		// Menus::get_instance();
+		Menus::get_instance();
+		// Customize::get_instance();
 		// Meta_Boxes::get_instance();
 		// Sidebars::get_instance();
 		// Blocks::get_instance();
@@ -31,16 +31,15 @@ class RESTAURANT_THEME {
 		 * Actions.
 		 */
 		add_action( 'after_setup_theme', [ $this, 'setup_theme' ] );
-
 	}
 
-	/**
+		/**
 	 * Setup theme.
 	 *
 	 * @return void
 	 */
 
-	public function setup_theme() {
+		public function setup_theme() {
 
 		/**
 		 * Let WordPress manage the document title.
@@ -183,6 +182,12 @@ class RESTAURANT_THEME {
 		// Remove the core block patterns
 		remove_theme_support( 'core-block-patterns' );
 
+		add_theme_support( 'add_section', 
+			[
+				'title' => 'custom'
+			]);
+
+
 		/**
 		 * Set the maximum allowed width for any content in the theme,
 		 * like oEmbeds and images added to posts
@@ -195,5 +200,4 @@ class RESTAURANT_THEME {
 			$content_width = 1240;
 		}
 	}
-
 }

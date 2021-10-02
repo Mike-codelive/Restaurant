@@ -21,11 +21,10 @@ if (get_theme_mod('hero_callout_display') == true) {
     <img class="banner__hero" alt="hero img" src="
     <?php 
     if (!get_theme_mod('hero_callout_image')) {
-      echo get_theme_file_uri('/images/library-hero.jpg');
+      echo get_theme_file_uri('/images/hero-2.jpg');
       } else {
         echo wp_get_attachment_url(get_theme_mod('hero_callout_image'));
       } ?>"/>
-
 
       <div class="banner__bar bottom-0 d-flex flex-column flex-lg-row">
 
@@ -98,14 +97,14 @@ if (get_theme_mod('hero_callout_display') == true) {
 
 }
 
-// get_template_part('Components/cowork', 'cowork');
-// get_template_part('Components/solution', 'solution');
-// get_template_part('Components/experience', 'experience');
-// get_template_part('Components/prod', 'prod');
-// get_template_part('Components/carousel', 'carousel');
-// get_template_part('Components/review', 'review');
-// get_template_part('Components/insight', 'insight');
-// get_template_part('Components/contact', 'contact');
+get_template_part('Components/cowork', 'cowork');
+get_template_part('Components/solution', 'solution');
+get_template_part('Components/experience', 'experience');
+get_template_part('Components/prod', 'prod');
+get_template_part('Components/carousel', 'carousel');
+get_template_part('Components/review', 'review');
+get_template_part('Components/insight', 'insight');
+get_template_part('Components/contact', 'contact');
 ?>
 
 

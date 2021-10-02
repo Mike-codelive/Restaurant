@@ -19,11 +19,11 @@
 
   class RunAfterCompile {
     apply(compiler) {
-      compiler.hooks.done.tap("Update functions.php", function () {
+      compiler.hooks.done.tap("Update ./inc/classes/class-assets.php", function () {
       // update functions php here
       const manifest = fse.readJsonSync("./bundled-assets/manifest.json")
 
-      fse.readFile("./functions.php", "utf8", function (err, data) {
+      fse.readFile("./inc/classes/class-assets.php", "utf8", function (err, data) {
         if (err) {
           console.log(err)
         }
@@ -34,7 +34,7 @@
 
         let result = data.replace(scriptsRegEx, `/bundled-assets/${manifest["scripts.js"]}'`).replace(vendorsRegEx, `/bundled-assets/${manifest["vendors~scripts.js"]}'`).replace(cssRegEx, `/bundled-assets/${manifest["scripts.css"]}'`)
 
-        fse.writeFile("./functions.php", result, "utf8", function (err) {
+        fse.writeFile("./inc/classes/class-assets.php", result, "utf8", function (err) {
           if (err) return console.log(err)
         })
       })
