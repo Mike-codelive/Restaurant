@@ -217,3 +217,6 @@ function productivity($wp_customize) {
 
 add_action('customize_register', 'productivity');
 // show_admin_bar( true );
+
+
+// add_action('after_setup_theme', 'restaurant_setup_theme');

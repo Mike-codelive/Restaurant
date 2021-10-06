@@ -49,27 +49,43 @@
   <div class="collapse navbar-collapse container-fluid" id="navbarNav">
 
       <div class="navbar__links">
-        <ul class="text-center mb-3 mb-xl-0 d-flex flex-column flex-xl-row">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><span> Home</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> <span>Coworkspace</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> <span>Services</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"> <span>Reviews</span></a>
-        </li>
-    </ul>
-</div>
+        <!-- <ul class="text-center mb-3 mb-xl-0 d-flex flex-column flex-xl-row"> -->
 
-<div class="container-fluid d-flex justify-content-center justify-content-xl-end">
-    <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--nav" role="group">Sign Up</button>
-</div>
+<!--               <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><span> Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <span>Coworkspace</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <span>Services</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <span>Reviews</span></a>
+            </li> -->
 
-</div>
+            <?php 
+            if (has_nav_menu( 'restaurant-header-menu') ) {
+                wp_nav_menu([
+                    'theme_location' => 'restaurant-header-menu',
+                    'container' => false,
+                    'fallback_cb' => false,
+                    'depth' => 4,
+                    'menu_class' => 'text-center mb-3 mb-xl-0 d-flex flex-column flex-xl-row',
+                    'container_class' => 'jeff lol'
+
+                ]);
+            }
+            ?>
+
+            <!-- </ul> -->
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center justify-content-xl-end">
+            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--nav" role="group">Sign Up</button>
+        </div>
+
+    </div>
 </div>
 
 </nav>

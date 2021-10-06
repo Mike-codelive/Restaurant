@@ -1,4 +1,4 @@
-<section class="review">
+<section class="review" id="review">
 
 	<div class="container-lg">
 		<div class="d-flex flex-wrap justify-content-end mb-5 me-lg-0 pe-lg-0">
