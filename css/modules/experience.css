@@ -7,9 +7,10 @@
 	}
 
 	&__btn {
-		background-color: $tertiary-color;
+		cursor: pointer;
+		background-color: var(--primaryColor);
 		font-size: 2rem;
-		box-shadow: 0 1.2rem 1rem hsl(166deg 85% 20%) !important;
+		box-shadow: 0 1.2rem 1rem var(--mainDark) !important;
 		transition-property: transform, box-shadow;
 		transition: ease-in-out .3s;
 		position: initial;
@@ -21,7 +22,7 @@
 
 		&:hover {
 			transform: translate(3px, 7px);
-			box-shadow: 0 .7rem 1rem hsl(166deg 85% 20%) !important;
+			box-shadow: 0 .7rem 1rem var(--mainDark) !important;
 		}
 	}
 
@@ -59,7 +60,7 @@
 			transform: translateX(50%);
 			&:hover {
 				transform: translate(45%, 15px) !important;
-				box-shadow: 0 0.6rem 1rem hsl(166deg 85% 20%) !important;
+				box-shadow: 0 0.6rem 1rem var(--mainDark) !important;
 			}
 		}
 	}

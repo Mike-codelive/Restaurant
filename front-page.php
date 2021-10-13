@@ -4,7 +4,8 @@ require_once('Components/_api.php');
 
 if (get_theme_mod('hero_callout_display') == true) {
   ?>
-  <section class='banner'>
+
+<section class='banner'>
 
     <div class="banner__header container-lg d-flex flex-column flex-lg-row justify-content-between px-3 px-lg-0">
       <h1 class="fw-bolder text-dark mb-3 mb-lg-0 me-0 me-lg-5">
@@ -90,7 +91,7 @@ if (get_theme_mod('hero_callout_display') == true) {
 
     </div>
 
-  </section>
+</section>
 
 
   <?php

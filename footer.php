@@ -22,9 +22,9 @@ if ( function_exists( 'the_custom_logo' )) {
 
   if ( has_custom_logo() ) {
     echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-  } else {
+} else {
     echo '<h1 class="text-center"><span class="fw-bolder"><img src="'. get_theme_file_uri("/images/icons/logo.png"). '" alt="logo"></span></h1>';
-  }
+}
 }
 
 ?>
@@ -59,12 +59,12 @@ if ( function_exists( 'the_custom_logo' )) {
   <div class="mb-3">
     <h2 class="footer__links-text">Address</h2>
     <p>Counter Delivery, Carters Beach PostCentre, Westport</p>
-  </div>
-  <div class="footer__ico">
+</div>
+<div class="footer__ico">
     <a href="#"><i class="bi bi-facebook"></i></a>
     <a href="#"><i class="bi-instagram"></i></a>
     <a href="#"><i class="bi bi-twitter"></i></a>
-  </div>
+</div>
 </div>
 
 </div>

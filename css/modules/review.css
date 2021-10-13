@@ -107,7 +107,7 @@
 		z-index: 9999999;
 
 		&-social {
-			color: $tertiary-color;
+			color: var(--primaryColor);
 			position: absolute;
 			right: 20%;
 			top: -12%;

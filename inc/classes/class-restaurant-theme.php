@@ -16,6 +16,7 @@ class RESTAURANT_THEME {
 		// Load class.
 		Assets::get_instance();
 		Menus::get_instance();
+		// Restaurant_Walker::get_instance();
 		// Customize::get_instance();
 		// Meta_Boxes::get_instance();
 		// Sidebars::get_instance();

@@ -30,7 +30,7 @@
 		}
 		div {
 			width: 250px;
-			background-color: $tertiary-color;
+			background-color: var(--primaryColor);
 		}
 	}
 

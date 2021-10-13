@@ -1,7 +1,6 @@
 .navbar {
 
 	padding: 20px 0;
-	background-color: $primary-color;
 
 	&__logo {
 		margin-right: 10.9rem;
@@ -9,64 +8,79 @@
 
 	&__links {
 
+		flex: 1 1 200%;
+
 		ul {
 			padding-left: 0;
 		}
-		span {
+		.material-icons-outlined {
+			transition: transform ease-in-out .3s;
+		}
+		#menu-navbar > li:hover > .dropdown-menu {
+			transform: scaleY(1);
+		}
+		#menu-navbar > li:hover > a > span {
+			transform: rotate(90deg);
+		}
+		.dropdown-toggle::after {
+			content: none;
+		}
+		.nav-item:hover > .nav-link {
+			color: var(--primaryColor);
+		}
+		.nav-link {
+			column-gap: .5rem;
 			position: relative;
 			font-weight: bold;
-		}
-/*		span:after {
-			content: "";
-			position: absolute;
-			width: 50%;
-			height: 2px;
-			bottom: -8px;
-			left: 0;
-			background-color: $tertiary-color;
-			transition: transform 0.3s ease-in-out;
-			transform: scaleX(0);
-			transform-origin: left;
-		}
-		li:hover span:after {
-			transform: scaleX(1);
-			}*/
-			li {
-				margin: 0 0 2rem;
-			}
-			a {
-				position: relative;
-				font-weight: bold;
-				/*new styles*/
-				transition: color ease-in-out .3s;
-				color: $secondary-color;
-				&:hover {
-					color: $tertiary-color;
-				}
-			}
-			a:after {
-				content: "";
-				position: absolute;
-				width: 50%;
-				height: 2px;
-				bottom: -8px;
-				left: 0;
-				background-color: $tertiary-color;
-				transition: transform 0.3s ease-in-out;
-				transform: scaleX(0);
-				transform-origin: left;
-			}
-			li:hover a:after {
-				transform: scaleX(1);
-			}
-		}
-
-		@media (min-width: 1200px) {
-			&__links {
-				li {
-					margin: 0 5rem 0 0;
-				}
-			}	
+			transition: color ease-in-out .3s;
+			color: var(--mainDark);
 		}
 
 	}
+
+	@media (min-width: 1200px) {
+		&__links {
+			#menu-navbar > .nav-item > .nav-link {
+				padding: 0;
+			}
+			#menu-navbar > .nav-item > .dropdown-menu {
+				position: absolute;
+			}
+			#menu-navbar > li > .dropdown-menu {
+				border: 1px solid rgba(0,0,0,.15);
+			}
+			.nav-link {
+				height: 100%;
+				padding: 1rem 0;
+			}
+			.dropdown-menu > .nav-item:not(:last-child) {
+				margin-bottom: .5rem;
+			}
+			.dropdown-menu {
+				border-top: 5px solid var(--primaryColor) !important;
+				padding: .5rem;
+				display: block;
+				transform-origin: top;
+				transform: scaleY(0);
+				transition-property: transform;
+				transition: ease-in-out .3s;
+			}
+
+		}
+	}
+
+	@media (max-width: 1200px) {
+		&__links {
+			#menu-navbar {
+				margin-top: 2rem;
+			}
+			#menu-navbar > li:hover > .dropdown-menu {
+				display: block;
+			}
+			.dropdown-menu {
+				position: static;
+				border: 0;
+			}
+		}	
+	}
+}

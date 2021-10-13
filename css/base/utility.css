@@ -1,7 +1,3 @@
-.site-title {
-  text-transform: capitalize;
-}
-
 .btn {
   &--white {
     color: $primary-color !important;
@@ -29,23 +25,47 @@
   &--nav {
     padding: .5rem 1.7rem;
     background-color: $primary-color !important;
-    border-color: $tertiary-color !important;
-    color: $tertiary-color !important;
+    border-color: var(--primaryColor) !important;
+    color: var(--primaryColor) !important;
     &:hover {
-      background-color: $tertiary-color !important;
+      background-color: var(--primaryColor) !important;
       color: $primary-color !important;
     }
   }
 
   &--search {
-    background-color: $tertiary-color !important;
+    background-color: var(--primaryColor) !important;
     color: $primary-color !important;
+  }
+
+  &--secondary {
+    background-color: var(--primaryColor)!important;
+    &:hover {
+      color: var(--primaryColor) !important; 
+      border-color: var(--primaryColor) !important;
+    }
   }
 
 }
 
+.site-title {
+  text-transform: capitalize;
+}
+
+.rotate-quarter {
+  transform: rotate(var(--rotateQuarter));
+}
+
+.activeLink {
+  color: var(--primaryColor) !important;
+}
+
+.showNavLink {
+  transform: scaleY(1) !important;
+}
+
 .link-green {
-  color: $tertiary-color !important;
+  color: var(--primaryColor) !important;
   .material-icons-outlined {
     transition: transform ease-out .5s;
   }

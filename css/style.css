@@ -3,8 +3,7 @@
 @import "swiper/swiper.min.css";
 @import "base/variables";
 @import "base/baseline";
-@import "base/utility-classes";
-
+@import "base/utility";
 
 
 @import "modules/navbar";

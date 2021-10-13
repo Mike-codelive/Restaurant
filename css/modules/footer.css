@@ -43,10 +43,10 @@
 			transition: ease-out .4s;
 			&:hover {
 				box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-				background-color: $tertiary-color;
+				background-color: var(--primaryColor);
 			}
 			&:hover i {
-				color: $primary-color;
+				color: $primary-color !important;
 			}
 		}
 
@@ -54,7 +54,7 @@
 			position: absolute;
 			font-size: 1rem;
 			border-radius: 50%;
-			color: $tertiary-color;
+			color: var(--primaryColor);
 			transition: box-shadow ease-out .4s;
 		}
 	}
