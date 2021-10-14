@@ -15,6 +15,7 @@ use AQUILA_THEME\Inc\Traits\Singleton;
 class Sidebars {
 
 	use Singleton;
+	
 
 	/**
 	 * Construct method.

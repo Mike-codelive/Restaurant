@@ -217,7 +217,6 @@ function productivity($wp_customize) {
 };
 
 add_action('customize_register', 'productivity');
-show_admin_bar( false );
 
 
 function color_theme ($wp_customize) {
@@ -241,9 +240,7 @@ add_action('customize_register', 'color_theme');
 function restaurant_customize_css() {
   ?>
   <style type="text/css">
-
   :root {
-
     --primaryColor: <?php echo get_theme_mod('color_callout_btn'); ?>;
   }
 </style>
@@ -277,3 +274,5 @@ class Restaurant_Walker extends Walker_Nav_Menu {
     $output         .=  '</ul>';
   }
 }
+
+show_admin_bar( false );

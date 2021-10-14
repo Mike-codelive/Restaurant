@@ -3,9 +3,10 @@ get_header();
 require_once('Components/_api.php');
 
 if (get_theme_mod('hero_callout_display') == true) {
+
   ?>
 
-<section class='banner'>
+<!-- <section class='banner'>
 
     <div class="banner__header container-lg d-flex flex-column flex-lg-row justify-content-between px-3 px-lg-0">
       <h1 class="fw-bolder text-dark mb-3 mb-lg-0 me-0 me-lg-5">
@@ -91,21 +92,21 @@ if (get_theme_mod('hero_callout_display') == true) {
 
     </div>
 
-</section>
+</section> -->
 
 
   <?php
 
 }
 
-get_template_part('Components/cowork', 'cowork');
-get_template_part('Components/solution', 'solution');
-get_template_part('Components/experience', 'experience');
-get_template_part('Components/prod', 'prod');
-get_template_part('Components/carousel', 'carousel');
-get_template_part('Components/review', 'review');
-get_template_part('Components/insight', 'insight');
-get_template_part('Components/contact', 'contact');
+// get_template_part('Components/cowork', 'cowork');
+// get_template_part('Components/solution', 'solution');
+// get_template_part('Components/experience', 'experience');
+// get_template_part('Components/prod', 'prod');
+// get_template_part('Components/carousel', 'carousel');
+// get_template_part('Components/review', 'review');
+// get_template_part('Components/insight', 'insight');
+// get_template_part('Components/contact', 'contact');
 ?>
 
 

@@ -20,7 +20,6 @@ print_r(ABSPATH . 'wp-includes/class-wp-walker.php');
 class Restaurant_Walker {
 
 	use Singleton;
-	use Walker_Nav_Menu;
 
 	// protected function __construct() {
 
