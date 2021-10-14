@@ -5,9 +5,6 @@ function showDropdown(nav, a) {
 	a.addEventListener('click', function(e) {
 
 		['show', 'showNavLink'].map(c=> nav.lastChild.classList.toggle(c) )
-		// nav.lastChild.classList.toggle('show')
-		// nav.lastChild.classList.toggle('showNavLink')
-		console.log(nav.lastChild)
 		a.classList.toggle('activeLink')
 		a.firstElementChild.classList.toggle('rotate-quarter')
 

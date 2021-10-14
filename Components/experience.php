@@ -36,7 +36,7 @@
 					</div>
 					<div class="text-light fs-1">
 						<h6 class="mb-4">
-							Opinion from experts
+							Opinion from Experts
 						</h6>
 
 						<a href="<?php the_permalink(); ?>" type="button" class="btn btn--white text-light shadow-none border-0 bg-transparent flex-grow-0 p-0 d-flex align-items-center align-self-center text-center fs-6">Read more<span class="material-icons-outlined ms-3">

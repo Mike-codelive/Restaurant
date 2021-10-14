@@ -1,21 +1,13 @@
 .insight {
 
-	img[alt="insights"] {
-		width: 100%;
-	}
-
-	a[type="button"] {
-		white-space: pre-wrap;
+	img {
+		height: 300px;
 	}
 
 	&__card {
 
 		transition: box-shadow ease-in-out .5s;
 		flex: 0 0 100%;
-
-		img {
-			height: 300px;
-		}
 
 		&:hover {
 			box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -28,8 +20,10 @@
 		}
 	}
 	@media (min-width: 992px) {
-		img[alt="insights"] {
-			width: 50%;
+		&__main-post {
+			img {
+				height: 500px;
+			}
 		}
 		&__card {
 			flex: 0 0 calc(33.33333% - 20px);
