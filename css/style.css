@@ -16,5 +16,6 @@
 @import "modules/review";*/
 @import "modules/insight";
 @import "modules/contact";
-@import "modules/footer";
 @import "modules/single";
+@import "modules/comment";
+@import "modules/footer";

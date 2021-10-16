@@ -33,4 +33,5 @@ $bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 :root {
 	--rotateQuarter: 90deg;
 	--mainDark: hsl(0deg 0% 0%);
+	--mainWhite: hsl(0deg 0% 100%);
 }
