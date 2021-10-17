@@ -1,6 +1,6 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
-@import "swiper/swiper.min.css";
+@import 'swiper/swiper.min.css';
 @import "base/variables";
 @import "base/baseline";
 @import "base/utility";

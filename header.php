@@ -25,22 +25,22 @@
 
         <nav class="navbar bgc-white container-md navbar-expand-xl navbar-light">
             <div class="container-fluid align-items-stretch">
-            <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="<?php echo site_url(); ?>">
+                <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="<?php echo site_url(); ?>">
 
 
-                <?php 
-                if ( function_exists( 'the_custom_logo' )) {
-                  $custom_logo_id = get_theme_mod( 'custom_logo' );
-                  $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                    <?php 
+                    if ( function_exists( 'the_custom_logo' )) {
+                      $custom_logo_id = get_theme_mod( 'custom_logo' );
+                      $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
-                  if ( has_custom_logo() ) {
-                    echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                } else {
-                    echo '<span class="site-title"><img src="'. get_theme_file_uri("/images/icons/logo.png"). '" alt="logo"></span>';
+                      if ( has_custom_logo() ) {
+                        echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                    } else {
+                        echo '<span class="site-title"><img src="'. get_theme_file_uri("/images/icons/logo.png"). '" alt="logo"></span>';
+                    }
                 }
-            }
 
-            ?>
+                ?>
             </a>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>

@@ -1,9 +1,9 @@
 .insight {
+	padding-top: 5rem;
 
 	img {
 		height: 300px;
 	}
-
 	&__card {
 
 		transition: box-shadow ease-in-out .5s;

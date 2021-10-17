@@ -29,25 +29,27 @@
 				?>
 
 				<?php if( $insightPosts->current_post == 0 && !is_paged() ) : ?>
-					<div class="insight__main-post d-flex flex-column flex-lg-row mb-5">
-						<img class="mb-3 mb-md-0" src="<?php 
-						if (!has_post_thumbnail()):
-						echo get_theme_file_uri('/images/asset-1.jpg');
-						else :
-						the_post_thumbnail_url('full');
-						endif?>" alt="<?php echo $image_alt; ?>">
-						<div class="px-3 mt-5 mt-lg-0 d-flex flex-column justify-content-center border border-1">
-							<h2 class="my-3 mt-lg-0">
-								<?php the_title(); ?>
-							</h2>
-							<p class="text-secondary">
-								<?php echo wp_trim_words(get_the_content(), 20); ?>
-							</p>
-							<a href="<?php the_permalink(); ?>" type="button" class="btn link-green shadow-none border-0 bg-transparent p-0 mb-3 mb-lg-0 align-self-start d-flex align-items-center">Read More 
-								<span class="material-icons-outlined ms-2">
-									chevron_right
-								</span>
-							</a>
+					<div class="container">
+						<div class="insight__main-post row mb-5 px-2">
+							<img class="mb-md-0 px-0 col-12 col-lg-6" src="<?php 
+							if (!has_post_thumbnail()):
+							echo get_theme_file_uri('/images/asset-2.jpg');
+							else :
+							the_post_thumbnail_url('full');
+							endif?>" alt="<?php echo $image_alt; ?>">
+							<div class="px-lg-3 mt-lg-0 col-12 col-lg-6 d-flex flex-column justify-content-center border border-1">
+								<h2 class="my-3 mt-lg-0">
+									<?php the_title(); ?>
+								</h2>
+								<p class="text-secondary">
+									<?php echo wp_trim_words(get_the_content(), 20); ?>
+								</p>
+								<a href="<?php the_permalink(); ?>" type="button" class="btn link-green shadow-none border-0 bg-transparent p-0 mb-3 mb-lg-0 align-self-start d-flex align-items-center">Read More 
+									<span class="material-icons-outlined ms-2">
+										chevron_right
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -55,12 +57,12 @@
 
 					<?php else : ?>
 
-						<div class="insight__card mb-5 mb-md-0 d-flex flex-column">
+						<div class="insight__card px-2 px-lg-0 mb-5 mb-md-0 d-flex flex-column border border-1">
 							<img class="mb-3" src="<?php 
 							if (has_post_thumbnail()) :
 							the_post_thumbnail_url('full');
 							else :
-							echo get_theme_file_uri('/images/asset-1.jpg');
+							echo get_theme_file_uri('/images/asset-2.jpg');
 							endif?>" alt="<?php echo $image_alt; ?>">
 							<h4 class="mx-3 mb-5">
 								<?php the_title(); ?>
