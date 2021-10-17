@@ -4,7 +4,7 @@
 
 		<div class="d-flex flex-column flex-md-row  justify-content-center justify-content-md-between align-items-center align-items-md-baseline mb-5">
 			<h1 class="mb-5 mb-md-0 text-center">News, updates and insights</h1>
-			<a type="button" class="btn link-green shadow-none border-0 bg-transparent py-0 d-flex align-items-center">Ideas by <span class="site-title ms-2"><?php echo get_bloginfo('name'); ?></span>
+			<a href="<?php echo site_url('blog'); ?>" type="button" class="btn link-green shadow-none border-0 bg-transparent py-0 d-flex align-items-center"><span class="site-title">Blog by <?php echo get_bloginfo('name'); ?></span>
 				<span class="material-icons-outlined">
 					chevron_right
 				</span>

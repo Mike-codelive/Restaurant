@@ -59,9 +59,15 @@
           <p>Counter Delivery, Carters Beach PostCentre, Westport</p>
         </div>
         <div class="footer__ico">
-          <a href="#"><i class="bi bi-facebook"></i></a>
+          <?php 
+          get_theme_mod('facebook_display') == 1 ? display_icon('facebook') : NULL;
+          get_theme_mod('instagram_display') == 1 ? display_icon('instagram') : NULL;
+          get_theme_mod('twitter_display') == 1 ? display_icon('twitter') : NULL;
+          get_theme_mod('youtube_display') == 1 ? display_icon('youtube') : NULL;
+          ?>
+          <!-- <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a> -->
         </div>
       </div>
 

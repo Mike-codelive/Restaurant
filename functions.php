@@ -20,7 +20,7 @@ if ( ! defined( 'RESTAURANT_DIR_URI' ) ) {
 // print_r(ABSPATH );
 
 require_once RESTAURANT_DIR_PATH . '/inc/helpers/autoloader.php';
-
+require_once RESTAURANT_DIR_PATH . '/inc/customize-social-icons.php';
 
 function restaurant_get_theme_instance() {
   \RESTAURANT_THEME\Inc\RESTAURANT_THEME::get_instance();
