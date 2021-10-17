@@ -260,7 +260,7 @@ class Restaurant_Walker extends Walker_Nav_Menu {
   public function start_el( &$output, $item, $depth = 0, $args = [], $id = 0 ){
     $output         .=  '<li class="nav-item text-center h-100">';
     $output         .=  $args->before;
-    $output         .=  '<a class="nav-link d-flex align-items-center" href="#">';
+    $output         .=  '<a class="nav-link d-flex align-items-center" href="' .$item->url.'">';
     $output         .=  $args->link_before . $item->title . $args->link_after;
     $output         .=  '</a>';
     $output         .=  $args->after;
