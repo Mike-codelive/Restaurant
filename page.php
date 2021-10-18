@@ -2,58 +2,61 @@
 
 get_header();
 
-while(have_posts()) {
-  the_post();
+if (!get_theme_mod('about_callout_image')) : 
+    $img_alt = 'about restaurant';
+    $imgUrl = get_theme_file_uri('/images/card.jpg');
+else :
+    $img_Url = get_theme_mod('about_callout_image');
+    $imgUrl = wp_get_attachment_url(get_theme_mod('about_callout_image'));
+    $imageId = attachment_url_to_postid($img_Url);
+    $img_alt = get_post_meta( $imageId, '_wp_attachment_image_alt', true );
 
-  ?>
-  
-  <div class="container container--narrow page-section">
-    
-    <?php
-    $theParent = wp_get_post_parent_id(get_the_ID());
-    if ($theParent) { ?>
-      <div class="metabox metabox--position-up metabox--with-home-link">
-        <p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to <?php echo get_the_title($theParent); ?></a> <span class="metabox__main"><?php the_title(); ?></span></p>
-      </div>
-    <?php }
-    ?>
+    print_r(wp_get_attachment_url($imgUrl));
+endif;
 
-    
-    
-    <?php 
-    $testArray = get_pages(array(
-      'child_of' => get_the_ID()
-    ));
+?>
 
-    if ($theParent or $testArray) { ?>
-      <div class="page-links">
-        <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
-        <ul class="min-list">
-          <?php
-          if ($theParent) {
-            $findChildrenOf = $theParent;
-          } else {
-            $findChildrenOf = get_the_ID();
-          }
 
-          wp_list_pages(array(
-            'title_li' => NULL,
-            'child_of' => $findChildrenOf,
-            'sort_column' => 'menu_order'
-          ));
-          ?>
-        </ul>
-      </div>
-    <?php } ?>
-    
+<section class="prod">
 
-    <div class="generic-content">
-      <?php the_content(); ?>
+    <div class="container-lg">
+        <div class="row no-gutters">
+            <div class="prod__first col-12 col-lg-6 text-dark mb-5 mb-lg-0">
+                <div class="mb-5">
+                    <p>
+                        <?php echo get_theme_mod( 'about_callout_title' ); ?>
+                    </p>
+                    <h1 class="mb-4 fw-bolder">
+                        <?php echo get_theme_mod('about_callout_headline') ?>
+                    </h1>
+                    <p>
+                        <?php echo get_theme_mod('about_callout_paragraph') ?>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 mb-lg-5">
+                <img class="w-100" src="<?php echo $imgUrl;?>
+                " alt="<?php echo $img_alt; ?>">
+            </div>
+
+            <div class="prod__map d-flex justify-content-center col-12 col-lg-6 mb-3 mb-lg-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96828.01455741416!2d-74.02537604734877!3d40.676713056206964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva%20York%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1634521800554!5m2!1ses-419!2smx" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <h1 class="fw-bolder"><?php echo get_theme_mod('about_callout_loc_title') ?></h1>
+                <p><?php echo get_theme_mod('about_callout_loc_paragraph') ?></p>
+            </div>
+
+        </div>
+
+
     </div>
 
-  </div>
-  
-<?php }
+</section>
+
+<?php
 
 get_footer();
 
