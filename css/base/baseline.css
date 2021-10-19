@@ -28,3 +28,55 @@ li {
     color: $secondary-color;
   }
 }
+
+.wp-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  position: relative;
+  .page-numbers {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .next,.prev {
+    position: absolute;
+  }
+  .next {
+    right: -2rem;
+    padding-left: 1rem;
+  }
+  .prev {
+    left: -2rem;
+    padding-right: 1rem;
+  }
+  .next:hover {
+    animation:  1s infinite alternate;
+    animation-name: bounce-right;
+  }
+  .prev:hover {
+    animation: bounce-left 1s infinite alternate;
+  }
+}
+
+@keyframes bounce-right {
+  0% { 
+    transform: scale(1);
+    right: -2rem;
+  }
+  100% { 
+    transform: scale(2);
+    right: -3rem;
+  }
+}
+
+@keyframes bounce-left {
+  0% { 
+    transform: scale(1);
+    left: -2rem;
+  }
+  100% { 
+    transform: scale(2);
+    left: -3rem;
+  }
+}

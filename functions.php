@@ -19,6 +19,11 @@ if ( ! defined( 'RESTAURANT_DIR_URI' ) ) {
 // print_r(get_theme_root());
 // print_r(ABSPATH );
 
+
+    // echo '<pre>';
+    // var_dump($var);
+    // echo '</pre>';
+
 require_once RESTAURANT_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once RESTAURANT_DIR_PATH . '/inc/customize-social-icons.php';
 require_once RESTAURANT_DIR_PATH . '/inc/customize-about.php';
@@ -276,4 +281,26 @@ class Restaurant_Walker extends Walker_Nav_Menu {
   }
 }
 
+// function restaurant_pagination() {
+
+//   $allowed_tags = [
+//     'span' => [
+//       'class' => []
+//     ],
+//     'a' => [
+//       'class' => [],
+//       'href' => [],
+//     ]
+//   ];
+
+//   $args = [
+//     'before_page_number' => '<span class="btn border border-secondary mr-2 mb-2">',
+//     'after_page_number' => '</span>',
+//   ];
+
+//   printf( '<nav class="aquila-pagination clearfix">%s</nav>', wp_kses( paginate_links( $args ), $allowed_tags ) );
+// }
+
+
 show_admin_bar( false );
+

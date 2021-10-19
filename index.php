@@ -18,13 +18,21 @@ get_header();
 
     <?php
 
-    $insightPosts = new WP_Query(array(
-      'order' => 'DESC',
-    ));
+    // $insightPosts = new WP_Query(array(
+    //   'order' => 'DESC',
+    //   'posts_per_page' => 4,
+    // ));
 
-    if (!empty($insightPosts->have_posts())):
-      while ($insightPosts->have_posts()):
-        $insightPosts->the_post();
+
+    if (!empty(have_posts())):
+      while (have_posts()):
+        the_post();
+
+
+        $category = get_the_category();
+        $link_category = get_category_link( $category[0]->term_id );
+        $author_ID          =   get_the_author_ID();
+        $author_URL         =   get_author_posts_url( $author_ID );
         $image_id = get_post_thumbnail_id();
         $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
         if (!$image_alt):
@@ -42,9 +50,33 @@ get_header();
             the_post_thumbnail_url('full');
             endif?>" alt="<?php echo $image_alt; ?>">
             <div class="px-lg-3 mt-lg-0 col-12 col-lg-6 d-flex flex-column justify-content-center border border-1">
-              <h2 class="my-3 mt-lg-0">
+              <h1 class="my-3 fw-bolder fs-1 mt-lg-0">
                 <?php the_title(); ?>
-              </h2>
+              </h1>
+              <div class="mb-3 d-flex gap-3 flex-wrap align-items-center text-dark">
+                <a class="align-items-center d-flex" href="<?php echo $author_URL; ?>">
+                  <span class="material-icons-outlined me-2"> person_outline</span>
+                  <?php the_author(); ?>
+                </a>
+                <p class="align-items-center d-flex mb-0">
+                  <span class="material-icons-outlined me-2">
+                    calendar_today
+                  </span>
+                  <?php the_date(); ?>
+                </p>
+                <a class="align-items-center d-flex" href="<?php echo $link_category; ?>">
+                  <span class="material-icons-outlined me-2">
+                    category
+                  </span>
+                  <?php echo $category[0]->cat_name; ?>
+                </a>
+                <p class="align-items-center d-flex mb-0">
+                  <span class="material-icons-outlined me-2">
+                    forum
+                  </span>
+                  <?php comments_number(); ?>
+                </p>
+              </div>
               <p class="text-secondary">
                 <?php echo wp_trim_words(get_the_content(), 20); ?>
               </p>
@@ -71,10 +103,22 @@ get_header();
       </div>
 
       <?php 
-    endif
+    endif;
     ?>
+    <div class="d-flex justify-content-center"> 
+     <div class="wp-pagination">
 
+      <?php 
+      echo paginate_links(array(
+        'prev_text'    => __('«'),
+        'next_text'    => __('»'),
+      ));
+
+      ?>
+    </div>
   </div>
+
+</div>
 
 </section>
 
