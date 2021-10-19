@@ -189,6 +189,9 @@ class RESTAURANT_THEME {
 			]);
 
 
+		add_theme_support( 'block-templates' );
+
+
 		/**
 		 * Set the maximum allowed width for any content in the theme,
 		 * like oEmbeds and images added to posts
