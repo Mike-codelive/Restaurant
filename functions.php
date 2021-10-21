@@ -302,5 +302,15 @@ class Restaurant_Walker extends Walker_Nav_Menu {
 // }
 
 
+function create_my_cat () {
+    if (file_exists (ABSPATH.'/wp-admin/includes/taxonomy.php')) {
+        require_once (ABSPATH.'/wp-admin/includes/taxonomy.php'); 
+        if ( ! get_cat_ID( 'Menú' ) ) {
+          wp_create_category( 'Menú' );
+        }
+    }
+}
+add_action ( 'after_setup_theme', 'create_my_cat' );
+
 show_admin_bar( false );
 

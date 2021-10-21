@@ -18,12 +18,6 @@ get_header();
 
     <?php
 
-    // $insightPosts = new WP_Query(array(
-    //   'order' => 'DESC',
-    //   'posts_per_page' => 4,
-    // ));
-
-
     if (!empty(have_posts())):
       while (have_posts()):
         the_post();
