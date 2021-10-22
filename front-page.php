@@ -101,7 +101,7 @@ if (get_theme_mod('hero_callout_display') == true) {
 
 // get_template_part('Components/cowork', 'cowork');
 // get_template_part('Components/solution', 'solution');
-// get_template_part('Components/experience', 'experience');
+get_template_part('Components/experience', 'experience');
 // get_template_part('Components/prod', 'prod');
 // get_template_part('Components/carousel', 'carousel');
 // get_template_part('Components/review', 'review');

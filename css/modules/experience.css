@@ -3,7 +3,7 @@
 	background: linear-gradient(to bottom, $primary-color 20%, $secondary-color 0%);
 
 	img {
-		height: 500px;
+		height: 40rem;
 	}
 
 	&__btn {

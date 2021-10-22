@@ -8,7 +8,7 @@ get_header();
 
 while(have_posts()) :
   the_post();
-    // pageBanner();
+
   $image_id = get_post_thumbnail_id();
   $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', TRUE);
   if (!$image_alt):
