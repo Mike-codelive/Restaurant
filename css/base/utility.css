@@ -18,7 +18,7 @@
     &:hover {
       color: $tertiary-color !important;
       background-color: $primary-color !important;
-      border: 1px solid $tertiary-color !important;
+      border: 1px solid var(--primaryColor) !important;
     }
   }
 

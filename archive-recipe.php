@@ -16,7 +16,7 @@ get_header();
                 the_post();
                 ?>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-sm-6 col-md-4">
                     <div class="">
                         <?php the_post_thumbnail('large'); ?>
                     </div>
@@ -33,25 +33,25 @@ get_header();
               <?php 
           endwhile;
       else :
-         ?>
+       ?>
 
-         <div class="col-12 col-md-4">
-            <div class="">
-                <img src="<?php echo get_theme_file_uri("/images/menu-1.jpg");?>" alt="logo">
-            </div>
-            <div class="mx-2 mt-2">
-                <h3>
-                    French Fries
-                </h3>
-                <div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Hic modi sequi minima adipisci voluptatem suscipit.
-                </div>
+       <div class="col-12 col-sm-6 col-md-4">
+        <div class="">
+            <img src="<?php echo get_theme_file_uri("/images/menu-1.jpg");?>" alt="logo">
+        </div>
+        <div class="mx-2 mt-2">
+            <h3>
+                French Fries
+            </h3>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Hic modi sequi minima adipisci voluptatem suscipit.
             </div>
         </div>
+    </div>
 
-        <?php 
-    endif;
-    ?>
+    <?php 
+endif;
+?>
 
 </div>
 </section>

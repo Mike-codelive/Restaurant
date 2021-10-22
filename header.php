@@ -24,7 +24,7 @@
     <header>
 
         <nav class="navbar bgc-white container-md navbar-expand-xl navbar-light">
-            <div class="container-fluid align-items-stretch">
+            <div class="container-fluid">
                 <a class="navbar__logo text-decoration-none text-dark fw-bolder fs-2" href="<?php echo site_url(); ?>">
 
 
@@ -56,36 +56,23 @@
                         'container' => false,
                         'fallback_cb' => false,
                         'depth' => 4,
-                        'menu_class' => 'text-center justify-content-between gap-0 gap-xl-4 mb-5 mb-xl-0 d-flex flex-column flex-xl-row h-100',
+                        'menu_class' => 'text-center justify-content-between gap-0 gap-xl-4 mb-3 mb-xl-0 d-flex flex-column flex-xl-row h-100',
                         'walker' => new Restaurant_Walker,
 
                     ]);
                 }
                 ?>
-                <!-- <ul class="text-center mb-3 mb-xl-0 d-flex flex-column flex-xl-row"> -->
 
-<!--               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><span> Home</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <span>Coworkspace</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <span>Services</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <span>Reviews</span></a>
-            </li> -->
-            <!-- </ul> -->
+            </div>
+
+            <div class="container-fluid d-flex justify-content-center justify-content-xl-end px-0">
+                <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--nav" role="group">Sign Up</button>
+            </div>
 
         </div>
-
-        <div class="container-fluid d-flex justify-content-center justify-content-xl-end px-0">
-            <button href="#" type="button" class="btn flex-shrink-1 btn-sm btn--green shadow-none btn--nav" role="group">Sign Up</button>
-        </div>
-
     </div>
-</div>
 
 </nav>
+
+
 </header>
