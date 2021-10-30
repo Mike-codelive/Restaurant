@@ -75,7 +75,15 @@ while(have_posts()) :
     </div>
 
     <div class="post__content mx-2 ms-md-5">
-      <?php the_content(); ?>
+      <?php 
+
+    $post = get_post();
+    echo $post->post_content;
+
+// get rid of rating in blog
+      // the_content(); 
+
+      ?>
     </div>
 
   </div>

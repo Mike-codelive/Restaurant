@@ -1,4 +1,11 @@
 <?php
+/**
+ * Main template front-page.
+ *
+ * @package Restaurant
+ */
+
+
 get_header();
 require_once('Components/_api.php');
 
@@ -6,7 +13,7 @@ if (get_theme_mod('hero_callout_display') == true) {
 
   ?>
 
-<!-- <section class='banner'>
+<section class='banner'>
 
     <div class="banner__header container-lg d-flex flex-column flex-lg-row justify-content-between px-3 px-lg-0">
       <h1 class="fw-bolder text-dark mb-3 mb-lg-0 me-0 me-lg-5">
@@ -18,7 +25,7 @@ if (get_theme_mod('hero_callout_display') == true) {
     </div>
 
     <div class="position-relative d-flex justify-content-center
-    justify-content-lg-start align-items-center container-fluid">
+    justify-content-lg-start align-items-center container-fluid px-0">
 
     <img class="banner__hero" alt="hero img" src="
     <?php 
@@ -26,7 +33,8 @@ if (get_theme_mod('hero_callout_display') == true) {
       echo get_theme_file_uri('/images/hero-2.jpg');
       } else {
         echo wp_get_attachment_url(get_theme_mod('hero_callout_image'));
-      } ?>"/>
+      } ?>
+      "/>
 
       <div class="banner__bar bottom-0 d-flex flex-column flex-lg-row">
 
@@ -92,21 +100,22 @@ if (get_theme_mod('hero_callout_display') == true) {
 
     </div>
 
-  </section> -->
+  </section>
 
 
   <?php
 
 }
 
-// get_template_part('Components/cowork', 'cowork');
-// get_template_part('Components/solution', 'solution');
+get_template_part('Components/cowork', 'cowork');
+get_template_part('Components/solution', 'solution');
 get_template_part('Components/experience', 'experience');
-// get_template_part('Components/prod', 'prod');
-// get_template_part('Components/carousel', 'carousel');
-// get_template_part('Components/review', 'review');
-// get_template_part('Components/insight', 'insight');
+get_template_part('Components/prod', 'prod');
+get_template_part('Components/carousel', 'carousel');
+get_template_part('Components/review', 'review');
+get_template_part('Components/insight', 'insight');
 get_template_part('Components/contact', 'contact');
+
 ?>
 
 

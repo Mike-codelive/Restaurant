@@ -23,7 +23,7 @@
     border-bottom-right-radius: 4px;
     z-index: 9999;
     background-color: $primary-color;
-    left: 11px;
+/*    left: 11px;*/
     bottom: -1px !important;
     a.show {
       .rotate-select-arrow {

@@ -21,7 +21,7 @@
 
 					<div class='cowork__card-front'>
 						<div class='position-relative'>
-							<img src="<?php echo get_theme_file_uri('/images/ocean.jpg') ?>" alt="card">
+							<img src="<?php echo get_theme_file_uri('/images/menu-1.jpg') ?>" alt="card">
 							<figcaption class="bg-dark text-white position-absolute bottom-0 p-3 pe-4 fs-3">01</figcaption>
 						</div>
 						<div class="text-center mt-3">
@@ -47,7 +47,7 @@
 				<div class="cowork__card d-flex flex-wrap position-relative">
 					<div class='cowork__card-front'>
 						<div class='position-relative'>
-							<img src="<?php echo get_theme_file_uri('/images/ocean.jpg') ?>" alt="card">
+							<img src="<?php echo get_theme_file_uri('/images/menu-1.jpg') ?>" alt="card">
 							<figcaption class="bg-dark text-white position-absolute bottom-0 p-3 pe-4 fs-3">02</figcaption>
 						</div>
 						<div class="text-center mt-3">
@@ -72,7 +72,7 @@
 
 					<div class='cowork__card-front '>
 						<div class='position-relative'>
-							<img src="<?php echo get_theme_file_uri('/images/ocean.jpg') ?>" alt="card">
+							<img src="<?php echo get_theme_file_uri('/images/menu-1.jpg') ?>" alt="card">
 							<figcaption class="bg-dark text-white position-absolute bottom-0 p-3 pe-4 fs-3">03</figcaption>
 						</div>
 						<div class="text-center mt-3">

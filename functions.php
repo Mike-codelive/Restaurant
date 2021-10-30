@@ -108,6 +108,8 @@ function hero_callout($wp_customize) {
       true => 'yes'
     )
   )));
+
+
   $wp_customize->add_setting('hero_callout_headline', array(
     'default' => 'Welcome to our Restaurant'
   ));
@@ -116,6 +118,8 @@ function hero_callout($wp_customize) {
     'section' => 'hero_callout_section',
     'settings' => 'hero_callout_headline'
   )));
+
+
   $wp_customize->add_setting('hero_callout_paragraph', array(
     'default' => "Revolutionize you workspace. Whether you're an established enterprise or a growing startup, discover spaces that inspire you most impactful work."
   ));
@@ -266,7 +270,7 @@ class Restaurant_Walker extends Walker_Nav_Menu {
   public function start_el( &$output, $item, $depth = 0, $args = [], $id = 0 ){
     $output         .=  '<li class="nav-item text-center h-100">';
     $output         .=  $args->before;
-    $output         .=  '<a class="nav-link d-flex align-items-center" href="' .$item->url.'">';
+    $output         .=  '<a class="nav-link d-flex align-items-center" href="' .$item->url. '">';
     $output         .=  $args->link_before . $item->title . $args->link_after;
     $output         .=  '</a>';
     $output         .=  $args->after;
@@ -311,6 +315,8 @@ function create_my_cat () {
   }
 }
 add_action ( 'after_setup_theme', 'create_my_cat' );
+
+
 
 show_admin_bar( false );
 

@@ -42,8 +42,8 @@
 
 		</div>
 
-		<div class="experience__box-2 d-flex align-items-center justify-content-between my-5 align-text-top">
-			<div class="text-light mb-5 mb-lg-0">
+		<div class="experience__box-2 my-5 align-text-top">
+			<div class="text-light d-flex justify-content-between mb-5 mb-lg-0">
 				<?php
 				$menuMonth = new WP_Query(array(
 					'post_type' => 'recipe',
@@ -77,14 +77,13 @@
 				?>
 				<div>
 					<h6>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti molestiae praesentium voluptate at! Ratione?
+						select a menu
 					</h6>
-
 					<h1>
 						Lorem ipsum dolor sit amet.
 					</h1>
 				</div>
-				<div class="text-light fs-1">
+				<div class="text-light align-self-center fs-1">
 					<h6 class="mb-4">
 						Opinion from experts
 					</h6>
