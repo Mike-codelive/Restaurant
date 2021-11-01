@@ -53,7 +53,7 @@
 }
 
 .rotate-quarter {
-  transform: rotate(var(--rotateQuarter));
+  transform: rotate(var(--rotateQuarter)) !important;
 }
 
 .activeLink {

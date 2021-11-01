@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="d-flex flex-column d-md-none">
-		<img class="mb-5" src="<?php echo get_theme_file_uri('/images/library-hero.jpg') ?>" alt="solutions-working">
+		<img class="mb-5" src="<?php echo get_theme_file_uri('/images/menu-1.jpg') ?>" alt="solutions-working">
 		<p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis modi sequi quasi quis dolor quas sed. Voluptatum reiciendis ducimus ab beatae, exercitationem, consequatur vel, obcaecati, consectetur ullam autem maxime sed voluptatibus? Modi, praesentium, velit.</p>
 		<button type="button" class="btn link-green shadow-none border-0 bg-transparent flex-grow-0 py-0 d-flex align-items-center align-self-center text-center">View All Solutions <span class="material-icons-outlined mx-3">
 			chevron_right
