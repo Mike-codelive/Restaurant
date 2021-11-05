@@ -38,7 +38,7 @@
 			<div class="col position-relative">
 				<div class="collapse openCard show multi-collapse" id="multiCollapseExample1" data-bs-parent="#cards">
 					<div class="solution__card card card-body border-0">
-						<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/vrah18bW9w0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/bojuTHXHYWw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Officia temporibus dignissimos sapiente vero ut blanditiis vel eligendi quasi rem nemo molestiae maxime sint quas, iusto.</p>
 						<button type="button" class="btn link-green shadow-none flex-grow-0 d-flex align-items-center align-self-center">View All Solutions <span class="material-icons-outlined mx-3">
 							chevron_right
